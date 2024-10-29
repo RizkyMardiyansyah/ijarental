@@ -1,13 +1,13 @@
 ## Feature
 
-# plugings
+### plugings
 - THEME by hasnayeen/themes
 - ROLE ACCES by bezhansalleh-filament-shield
 - PROFILE EDITOR by jao paulo leite Nascimento
 - IMPERSONATE by Joseph Szobody
 - EXCEL EXPORT by Dennis Koch
 
-# filament doc
+### filament doc
 - Notifications database
 - User Management
 
