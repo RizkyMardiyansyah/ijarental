@@ -28,10 +28,6 @@ class OrderObserver
                 ->markAsRead()
                 ->url(OrderResource::getUrl('edit', ['record' => $order->id]))
                 
-            // Action::make('Mark as read')
-            //     ->button()
-            //     ->color('danger')
-            //     ->markAsRead(),
         ])
         ->sendToDatabase($recepient); 
 
