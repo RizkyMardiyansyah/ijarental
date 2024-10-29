@@ -2,7 +2,7 @@
 
 ### plugings
 - THEME by hasnayeen/themes
-- ROLE ACCES by bezhansalleh-filament-shield
+- ROLE ACCESS by bezhansalleh-filament-shield
 - PROFILE EDITOR by jao paulo leite Nascimento
 - IMPERSONATE by Joseph Szobody
 - EXCEL EXPORT by Dennis Koch
@@ -18,30 +18,41 @@
 1. Clone Project:
 
 ```bash
- git clone https://github.com/RizkyMardiyansyah/mard.git mardsoft
+ git clone https://github.com/RizkyMardiyansyah/FilamentBase.git Base
 ```
-2. Copy .env.example into .env
+2. Install:
 
-3. Create DB and Configuration in .env
+```bash
+ Composer install
+```
 
-4. Migrate:
+3. Copy .env.example into .env
+
+4. Create DB and Configuration in .env
+
+5. Migrate:
 
 ```bash
  php artisan migrate
 ```
 
-5. Crete Link:
+6. Crete Link:
 
 ```bash
 php artisan storage:link
 ```
 
-6. create user
+7. create user
 
 ```bash
 php artisan make:filament-user
 ```
 
+8. Instal Role Access
+
+```bash
+php artisan shield:install
+```
 
 ## Send Notification
 
