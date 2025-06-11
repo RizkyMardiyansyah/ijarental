@@ -33,7 +33,7 @@ return [
 
     'nav.group' => 'Settings',
     'nav.role.label' => 'តួនាទី',
-    'nav.role.icon' => 'heroicon-s-shield-check',
+    'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'តួនាទី',
     'resource.label.roles' => 'តួនាទី',
 

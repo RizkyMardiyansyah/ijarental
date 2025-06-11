@@ -2,6 +2,7 @@
 
 namespace App\Providers\Filament;
 
+use App\Filament\Resources\CarResource;
 use App\Filament\Resources\OrderResource\Widgets\StatsOverview;
 use App\Filament\Resources\UserResource\Widgets\orderOverview;
 use App\Filament\Resources\UserResource\Widgets\userOverview;
@@ -31,6 +32,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->homeUrl(fn () => CarResource::getUrl('index'))
             ->id('admin')
             ->path('admin')
             ->login()
@@ -39,7 +41,7 @@ class AdminPanelProvider extends PanelProvider
                 'primary' => Color::Amber,
             ])
             ->font('poppins')
-            ->brandLogo(asset('img/MardBlue.svg'))
+            ->brandLogo(asset('images/Ij_rental_logo_biru.svg'))
             ->brandLogoHeight('40px')
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
@@ -77,7 +79,7 @@ class AdminPanelProvider extends PanelProvider
                 ->setNavigationGroup('Settings')
                 ->setSort(3)
                 ->setNavigationLabel('My Profile')
-                ->setIcon('heroicon-s-user')                
+                ->setIcon('heroicon-o-user')                
                 ->shouldShowDeleteAccountForm(false)
                 ->shouldShowBrowserSessionsForm()
                 ->shouldShowAvatarForm(),
@@ -99,7 +101,7 @@ class AdminPanelProvider extends PanelProvider
             ->navigationItems([
                 NavigationItem::make('Themes')
                     ->url('/admin/themes')
-                    ->icon('heroicon-s-paint-brush')
+                    ->icon('heroicon-o-paint-brush')
                     ->isActiveWhen(fn () => request()->is('admin/themes'))
                     ->group('Settings')
                     ->sort(4),

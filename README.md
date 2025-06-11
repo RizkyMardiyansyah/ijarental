@@ -53,6 +53,11 @@ php artisan make:filament-user
 ```bash
 php artisan shield:install
 ```
+9. Make Super Admin
+
+```bash
+php artisan shield:super-admin
+```
 
 ## Send Notification
 

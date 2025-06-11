@@ -33,7 +33,7 @@ return [
 
     'nav.group' => 'Tiesības',
     'nav.role.label' => 'Lomas',
-    'nav.role.icon' => 'heroicon-s-shield-check',
+    'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'Loma',
     'resource.label.roles' => 'Lomas',
 

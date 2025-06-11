@@ -33,7 +33,7 @@ return [
 
     'nav.group' => 'Settings',
     'nav.role.label' => 'ロール',
-    'nav.role.icon' => 'heroicon-s-shield-check',
+    'nav.role.icon' => 'heroicon-o-shield-check',
     'resource.label.role' => 'ロール',
     'resource.label.roles' => 'ロール',
 
