@@ -176,85 +176,184 @@
                    <p> Di sini kami telah mengumpulkan beberapa pertanyaan yang sering diajukan oleh pelanggan kami beserta jawabannya.</p>
                 </div>
              
-             <!--start tabs-->
-             <div class="col-md-6 container">
-              
-                <img style="width: 100%" src="images/faq.svg" alt="Pertanyaan tentang ija rental mobil padang">
-             
-             </div>
-            <!-- End Tabs-->
+            
            
            <!--Start Accordion-->
-           <div class="col-md-6">
+            <div class="container" style="width: 80%">
               <div class="panel-group accordion-main" id="accordion">
-                      <!--About accordion #1-->
-              <div class="panel">
-                          <div class="panel-heading collapsed" data-toggle="collapse"
-                           data-parent="#accordion" data-target="#collapseOne">
-                         <h6 class="panel-title accordion-toggle">
-                             Photography
-                         </h6>
-                       </div>
-         <div id="collapseOne" class="panel-collapse collapse">
-                           <div class="panel-body">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
-                           </p>
-                               
-                       </div>
-         </div>
-         </div>
-                 
-                 <!--About accordion #2-->
-         <div class="panel">
-                      <div class="panel-heading collapsed" data-toggle="collapse"
-                       data-parent="#accordion" data-target="#collapseTwo">
-                     <h6 class="panel-title accordion-toggle">
-                         Web Designing
-                     </h6>
-                      </div>
-         <div id="collapseTwo" class="panel-collapse collapse">
-                           <div class="panel-body">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
-                           </p>
-                       </div>
-         </div>
-         </div>
 
-                <!--About accordion #3-->
-         <div class="panel">
-                     <div class="panel-heading collapsed" data-toggle="collapse"
-                           data-parent="#accordion" data-target="#collapseThree">
-                         <h6 class="panel-title accordion-toggle">
-                             Web Development
-                         </h6>
-                       </div>
-         <div id="collapseThree" class="panel-collapse collapse">
-                           <div class="panel-body">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
-                           </p>
-                               
-                       </div>
-         </div>
-         </div>
+                <!-- Accordion #1 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                    <h6 class="panel-title accordion-toggle">
+                      Bagaimana cara memesan mobil di Resmi Rental Mobil Padang?
+                    </h6>
+                  </div>
+                  <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Anda dapat memesan mobil melalui website kami dengan mengisi formulir pemesanan, menghubungi kami melalui telepon atau WhatsApp, atau datang langsung ke kantor kami di Jl. Gn. Tandikat No.35, Gn. Pangilun, Kec. Padang Utara, Kota Padang, Sumatera Barat 25173.</p>
+                    </div>
+                  </div>
+                </div>
 
-               <!--About accordion #4-->
-        <div class="panel">
-                    <div class="panel-heading collapsed" data-toggle="collapse"
-                           data-parent="#accordion" data-target="#collapseFour">
-                         <h6 class="panel-title accordion-toggle">
-                             Responsive Design
-                         </h6>
-                       </div>
-         <div id="collapseFour" class="panel-collapse collapse">
-                           <div class="panel-body">
-                               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non blandit nibh. Sed eget tortor tincidunt, auctor sem eget, mollis nisi. Pellentesque ipsum erat, facilisis ut venenatis eu, sodales vel dolor fusce diam ornare.
-                           </p>
-                       </div>
-         </div>
-         </div>
-       </div>
-           </div>
-           <!--End Accordion-->
+                <!-- Accordion #2 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwo">
+                    <h6 class="panel-title accordion-toggle">
+                      Apa saja jenis mobil yang tersedia untuk disewa?
+                    </h6>
+                  </div>
+                  <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Kami menyediakan berbagai jenis mobil, termasuk Avanza, All New Avanza, Innova Reborn, Innova Zenix, Fortuner, Alphard, Pajero, Hiace, dan lebih dari 300 unit mobil lainnya.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #3 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseThree">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah saya bisa menyewa mobil tanpa sopir?
+                    </h6>
+                  </div>
+                  <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Saat ini, layanan kami hanya menyediakan rental mobil dengan sopir. Hal ini untuk memastikan kenyamanan dan keselamatan Anda selama perjalanan.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #4 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFour">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah ada syarat khusus untuk menyewa mobil?
+                    </h6>
+                  </div>
+                  <div id="collapseFour" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Ya, Anda perlu menunjukkan identitas diri yang sah seperti KTP atau paspor dan SIM (Surat Izin Mengemudi) yang masih berlaku. Untuk beberapa jenis mobil mewah, mungkin diperlukan deposit tambahan.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #5 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseFive">
+                    <h6 class="panel-title accordion-toggle">
+                      Bagaimana cara pembayaran sewa mobil?
+                    </h6>
+                  </div>
+                  <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Kami menerima berbagai metode pembayaran, termasuk transfer bank, kartu kredit, dan pembayaran tunai. Anda dapat memilih metode pembayaran yang paling nyaman bagi Anda.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #6 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSix">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah ada biaya tambahan yang harus saya bayar?
+                    </h6>
+                  </div>
+                  <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Biaya sewa mobil sudah termasuk biaya sopir dan bahan bakar. Namun, biaya tol, parkir, dan penginapan sopir (jika diperlukan) akan menjadi tanggungan penyewa.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #7 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseSeven">
+                    <h6 class="panel-title accordion-toggle">
+                      Bagaimana jika saya harus membatalkan pemesanan?
+                    </h6>
+                  </div>
+                  <div id="collapseSeven" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Kami memahami bahwa rencana dapat berubah. Jika Anda perlu membatalkan pemesanan, harap hubungi kami sesegera mungkin. Kebijakan pembatalan kami memungkinkan pengembalian dana penuh jika pembatalan dilakukan 48 jam sebelum waktu sewa.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #8 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseEight">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah ada layanan antar-jemput?
+                    </h6>
+                  </div>
+                  <div id="collapseEight" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Ya, kami menyediakan layanan antar-jemput ke bandara, hotel, dan lokasi lain di Padang dan sekitarnya. Silakan informasikan kepada kami saat melakukan pemesanan.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #9 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseNine">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah saya bisa menyewa mobil untuk perjalanan luar kota?
+                    </h6>
+                  </div>
+                  <div id="collapseNine" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Tentu saja, Anda bisa menyewa mobil untuk perjalanan luar kota. Namun, mohon informasikan rencana perjalanan Anda kepada kami saat pemesanan agar kami dapat menyiapkan kendaraan yang sesuai dan memberikan penawaran harga yang tepat.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #10 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTen">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah tersedia paket wisata atau tur?
+                    </h6>
+                  </div>
+                  <div id="collapseTen" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Ya, kami menawarkan berbagai paket wisata yang mencakup kunjungan ke tempat-tempat menarik di Padang dan Sumatera Barat. Paket wisata kami termasuk kendaraan, sopir, dan pemandu wisata yang berpengalaman.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #11 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseEleven">
+                    <h6 class="panel-title accordion-toggle">
+                      Bagaimana jika saya mengalami masalah dengan mobil selama perjalanan?
+                    </h6>
+                  </div>
+                  <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Kendaraan kami dijaga dengan baik dan diperiksa secara rutin untuk memastikan kondisi prima. Namun, jika Anda mengalami masalah selama perjalanan, segera hubungi layanan pelanggan kami di +62812-6825-8986. Kami akan memberikan bantuan sesegera mungkin.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Accordion #12 -->
+                <div class="panel">
+                  <div class="panel-heading collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#collapseTwelve">
+                    <h6 class="panel-title accordion-toggle">
+                      Apakah ada asuransi yang disertakan dalam sewa mobil?
+                    </h6>
+                  </div>
+                  <div id="collapseTwelve" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>Ya, semua mobil kami dilengkapi dengan asuransi dasar. Namun, untuk perlindungan lebih, Anda dapat memilih opsi asuransi tambahan dengan biaya ekstra.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--End Accordion-->
+
              
           </div> <!--/.row-->
       </div> <!--/.container-->
