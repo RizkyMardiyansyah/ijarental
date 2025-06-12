@@ -2389,14 +2389,16 @@ html[xmlns] .slides {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.post-desc p{
+.post-desc p {
 	display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
+	-webkit-line-clamp: 3; /* Batas maksimal 3 baris */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 1.5em; /* Pastikan tinggi baris */
+	max-height: calc(1.5em * 3); /* Tambahan untuk jaga-jaga */
+  }
+  
 .post-desc h5 {
     color: #585957;
     font-size: 13px;
