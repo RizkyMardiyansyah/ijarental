@@ -92,7 +92,6 @@ public static function form(Form $form): Form
                     ->directory('armadas')
                     ->image()
                     ->imagePreviewHeight('250')
-                    ->maxSize(2048)
                     ->columnSpanFull(),
             ])
             ->columns(1),

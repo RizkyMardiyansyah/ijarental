@@ -3,7 +3,7 @@
   <head>
     <head>
       <meta charset="utf-8">
-      <title>Rental Mobil Terpercaya di Kota Padang | Paket Wisata Kota PadangFname</title>
+      <title>{{ $paket->nama_paket }}</title>
       <meta name="author" content="Ija Rental Padang">
       <meta name="keywords" content="rental mobil padang, sewa mobil padang, rental kereta, rental mobil terpercaya di padang, rental mobil murah padang, sewa mobil harian padang">
       <meta name="description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
