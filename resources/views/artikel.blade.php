@@ -239,7 +239,7 @@
 										<a class="blogmedia" href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}"><img src="{{ asset('storage/' . $blogs->thumbnail) }}" alt="{{ $blogs->thumbnail }}"></a>
 									</div>	
 									
-									<div class="padding: 5px;">
+									<div class="padding: 10px;">
 									<p class="sidebar-widget-title"><a href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}">{!! $blogs->judul !!}</a></p>
 									<p class="date">{{ \Carbon\Carbon::parse($blogs->published_at)->format('Y-m-d') }}</p>
 
