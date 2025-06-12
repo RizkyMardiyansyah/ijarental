@@ -2373,15 +2373,16 @@ html[xmlns] .slides {
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
-
 .post-desc {
 	padding: 25px 20px;
+}
+.konten {
 	position: relative;
 	max-height: 4.5em; /* Kira-kira 3 baris */
 	overflow: hidden;
   }
   
-  .post-desc::after {
+  .konten::after {
 	content: "";
 	position: absolute;
 	bottom: 0;
