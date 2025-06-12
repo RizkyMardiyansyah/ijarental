@@ -240,7 +240,7 @@
                             
                             @endforeach
 							<div style="margin-top: 10px" class="text-center mt-4">
-								{{ $cars->links('pagination::simple-default') }}
+								{{ $cars->links() }}
 							</div>
 					</div>	
 					<!-- /Blog Post -->

@@ -230,7 +230,7 @@
             </li>
             @endforeach
 			<div style="margin-top: 10px" class="text-center mt-4">
-				{{ $paketWisata->links('pagination::simple-default') }}
+				{{ $paketWisata->links() }}
 			</div>
 					</div>	
 					<!-- /Blog Post -->
