@@ -2378,8 +2378,9 @@ html[xmlns] .slides {
 }
 .konten {
 	position: relative;
-	max-height: 4.5em; /* Kira-kira 3 baris */
+	max-height: 4.5em; 
 	overflow: hidden;
+	padding: 0px;
   }
   
   .konten::after {
