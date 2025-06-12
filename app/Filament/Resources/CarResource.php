@@ -4,7 +4,7 @@ namespace App\Filament\Resources;
 
 use App\Filament\Resources\CarResource\Pages;
 use App\Filament\Resources\CarResource\RelationManagers;
-use App\Models\Car;
+use App\Models\car;
 use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Grid;
@@ -22,7 +22,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class CarResource extends Resource
 {
     
-    protected static ?string $model = Car::class;
+    protected static ?string $model = car::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-truck';
     protected static ?string $navigationGroup = 'Bussines';
