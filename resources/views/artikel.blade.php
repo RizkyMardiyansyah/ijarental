@@ -234,8 +234,11 @@
 						<div class="widget-main">
 								<h4>Latest Post</h4>
 								@foreach ($blogs as $blogs)
-								<div class="sidebar-widget clearfix">	
-									<a class="blogmedia" href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}"><img src="{{ asset('storage/' . $blogs->thumbnail) }}" alt="{{ $blogs->thumbnail }}"></a>
+								<div class="sidebar-widget clearfix">
+									<div class="margin: 2px">
+										<a class="blogmedia" href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}"><img src="{{ asset('storage/' . $blogs->thumbnail) }}" alt="{{ $blogs->thumbnail }}"></a>
+									</div>	
+									
 									<div class="padding: 5px;">
 									<p class="sidebar-widget-title"><a href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}">{!! $blogs->judul !!}</a></p>
 									<p class="date">{{ \Carbon\Carbon::parse($blogs->published_at)->format('Y-m-d') }}</p>
