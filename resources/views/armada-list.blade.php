@@ -71,7 +71,7 @@
       </div>
     </section>
     <!--Start Contact-->
-    @include('contact.footer')
+    @include('partials.contact')
     <!--End Contact-->
     <!--Start Footer--> 
 	@include('partials.footer')

@@ -509,7 +509,7 @@
     </section>
     <!--Start Testimonial-->
     <!--Start Contact-->
-    @include('contact.footer')
+    @include('partials.contact')
     <!--End Contact-->
     {{-- Footer Section --}} 
     @include('partials.footer') 
