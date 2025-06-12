@@ -65,9 +65,14 @@ class PaketWisataResource extends Resource
 
                                 Forms\Components\TextInput::make('harga_paket')
                                     ->label('Harga Paket')
-                                    ->mask(RawJs::make('$money($input)'))
-                                    ->prefix('IDR')
-                                    ->disabled(fn (Get $get) => ! $get('tambah_harga')),
+                                    ->label('Harga Sewa')
+    ->prefix('IDR')
+    ->mask(RawJs::make(<<<'JS'
+        $money($input)
+    JS))
+    ->numeric() // ini akan mengubah input menjadi angka saat disimpan
+    ->stripCharacters(',') // menghapus koma agar tidak error di database
+    ->disabled(fn (Get $get) => ! $get('tambah_harga')),
                             ]),
 
                         Forms\Components\Textarea::make('deskripsi')
