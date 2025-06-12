@@ -233,21 +233,23 @@
 						<div class="widget-main">
 							<h4>Latest Post</h4>
 							@foreach ($blogs as $blog)
-								<div class="sidebar-widget clearfix d-flex">
-									<div class="blog-thumbnail">
-										<a class="blogmedia" href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
-											<img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
+							<div class="sidebar-widget clearfix d-flex">
+								<div class="blog-thumbnail">
+									<a class="blogmedia" href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
+										<img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
+									</a>
+								</div>	
+							
+								<div class="blog-info">
+									<p class="sidebar-widget-title blog-title">
+										<a href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
+											{{ $blog->judul }}
 										</a>
-									</div>	
-									<div style="padding-left: 10px;" class="blog-info">
-										<p class="sidebar-widget-titl">
-											<a href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
-												{!! $blog->judul !!}
-											</a>
-										</p>
-										<p class="date text-muted small">{{ \Carbon\Carbon::parse($blog->published_at)->format('Y-m-d') }}</p>
-									</div>
+									</p>
+									<p class="date text-muted small">{{ \Carbon\Carbon::parse($blog->published_at)->format('Y-m-d') }}</p>
 								</div>
+							</div>
+							
 							@endforeach
 						</div>	
 					</div>

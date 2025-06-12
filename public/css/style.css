@@ -3088,8 +3088,8 @@ li.comment ol.comment-sub {
 }
 
 .blog-thumbnail {
-	width: 100px;       /* Ukuran fix agar semua gambar seragam */
-	height: 75px;       /* Atur tinggi sesuai rasio yang kamu mau */
+	width: 100px;
+	height: 75px;
 	overflow: hidden;
 	border-radius: 6px;
 	flex-shrink: 0;
@@ -3098,8 +3098,30 @@ li.comment ol.comment-sub {
 .blog-thumbnail img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;  /* Penting agar gambar di-crop sesuai container */
+	object-fit: cover;
 	display: block;
+}
+
+.blog-title {
+	font-size: 14px;
+	font-weight: 600;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;          /* Batas 2 baris */
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 40px;                   /* Sesuaikan untuk 2 baris */
+	line-height: 1.2;
+	margin: 0;
+}
+
+.blog-info {
+	flex-grow: 1;
+	padding-left: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;        /* Agar teks sejajar tengah */
+	height: 75px;                   /* Sama dengan tinggi gambar */
 }
 
 
