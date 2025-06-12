@@ -234,12 +234,12 @@
 							<h4>Latest Post</h4>
 							@foreach ($blogs as $blog)
 								<div class="sidebar-widget clearfix d-flex">
-									<div style="margin-right: 10px" class="blog-thumbnail">
+									<divclass="blog-thumbnail">
 										<a class="blogmedia" href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
 											<img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
 										</a>
 									</div>	
-									<div class="blog-info">
+									<div style="padding-left: 10px;" class="blog-info">
 										<p class="sidebar-widget-titl">
 											<a href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
 												{!! $blog->judul !!}
