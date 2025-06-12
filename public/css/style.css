@@ -1824,9 +1824,9 @@ html[xmlns] .slides {
     width: 100%;
     max-width: 320px;
     transition: transform 0.3s ease;
-    display: flex;
+    display: flex !important;
     flex-direction: column;
-	gap: 20px !important;
+	gap: 10px !important;
 	border: 2px solid rgba(0, 0, 0, .1);
 }
 
