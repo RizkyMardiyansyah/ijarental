@@ -32,7 +32,7 @@ class ArmadaController extends Controller
     
     public function bloglist()
     {
-        $blogs = Blog::latest()->take(3)->get();
+        $blogs = Blog::all();
 
         return view('artikel-list', compact('blogs'));
     }
