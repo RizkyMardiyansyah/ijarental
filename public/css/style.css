@@ -3080,25 +3080,45 @@ li.comment ol.comment-sub {
 }
 
 .widget-main {
-	margin-bottom:30px;
-	padding:20px 20px 10px 20px;
+	margin-bottom: 30px;
+	padding: 20px;
 	border: 1px solid #EAEAEA;
+	background-color: #fff;
 }
 
-.widget-sidebar .search-box {
-	position: relative;
+.sidebar-widget {
+	display: flex;
+	align-items: flex-start;
 }
 
-.widget-sidebar .search-box input {
-	padding-left:10px;
+.blog-thumbnail img {
+	width: 80px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 4px;
 }
 
-.widget-sidebar .search-box i {
-	position: absolute;
-	right: 20px;
-	top: 14px;
-	font-size: 16px;
+.sidebar-widget-title {
+	font-weight: bold;
+	font-size: 14px;
+	margin-bottom: 4px;
 }
+
+.sidebar-widget-title a {
+	color: #333;
+	text-decoration: none;
+}
+
+.sidebar-widget-title a:hover {
+	text-decoration: underline;
+}
+
+.date {
+	font-size: 12px;
+	color: #888;
+	margin: 0;
+}
+
 
 .post-categories ul {
 	padding:0px;

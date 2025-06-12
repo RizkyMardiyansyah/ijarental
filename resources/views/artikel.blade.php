@@ -229,29 +229,29 @@
 					<!-- /Blog Post -->
 
 					<!-- Right Sidebar -->					
-				   <div class="col-md-4 col-sm-4">	                        
-				  <!--Start popular Post -->
+					<div class="col-md-4 col-sm-4">	                        
 						<div class="widget-main">
-								<h4>Latest Post</h4>
-								@foreach ($blogs as $blogs)
-								<div class="sidebar-widget clearfix">
-									<div style="padding: 5px">
-										<a class="blogmedia" href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}"><img src="{{ asset('storage/' . $blogs->thumbnail) }}" alt="{{ $blogs->thumbnail }}"></a>
+							<h4>Latest Post</h4>
+							@foreach ($blogs as $blog)
+								<div class="sidebar-widget clearfix mb-3 d-flex">
+									<div class="blog-thumbnail me-2">
+										<a class="blogmedia" href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
+											<img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
+										</a>
 									</div>	
-									
-									<div class="padding: 10px;">
-									<p class="sidebar-widget-title"><a href="/artikel-{{Str::slug($blogs->judul) }}-{{ $blogs->id }}">{!! $blogs->judul !!}</a></p>
-									<p class="date">{{ \Carbon\Carbon::parse($blogs->published_at)->format('Y-m-d') }}</p>
-
+									<div class="blog-info">
+										<p class="sidebar-widget-title mb-1">
+											<a href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
+												{!! $blog->judul !!}
+											</a>
+										</p>
+										<p class="date text-muted small">{{ \Carbon\Carbon::parse($blog->published_at)->format('Y-m-d') }}</p>
 									</div>
-									
 								</div>
-								@endforeach
-									
+							@endforeach
 						</div>	
-						<!-- / popular Post -->
-						
 					</div>
+					
 					<!-- /right Sidebar -->
 				</div> <!-- /row -->			
 			</div>		
