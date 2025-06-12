@@ -32,8 +32,8 @@ class ArmadaController extends Controller
     
     public function bloglist()
     {
-        $blogs = Blog::all();
 
+        $blogs = Blog::latest()->paginate(9);
         return view('artikel-list', compact('blogs'));
     }
 

@@ -197,6 +197,9 @@
 							</div>
 						</div>
 						@endforeach
+						<div class="text-center mt-4">
+							{{ $blogs->links() }}
+						</div>
 					</div>	
 					<!-- /Blog Post -->
 				</div>
