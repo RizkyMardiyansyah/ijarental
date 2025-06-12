@@ -174,7 +174,7 @@
    <!--End Navigation-->
 
 		<!-- page-header -->
-		<section id="armada-rental-mobil-padang" class="parallax">
+		<section id="artikel-rental-mobil-padang" class="parallax">
            <div class="overlay"></div>
 			<div class="container">
 				<h1>Armada Ija Rental Mobil Padang</h1>
