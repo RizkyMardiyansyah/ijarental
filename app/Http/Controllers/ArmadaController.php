@@ -17,6 +17,17 @@ class ArmadaController extends Controller
 
         return view('home', compact('cars', 'paketWisata', 'blogs'));
     }
+
+    public function armada()
+    {
+        $cars = car::all();
+        return view('armada-list', compact('cars'));
+    }
+    public function paketwisata()
+    {
+        $paketWisata = PaketWisata::all();
+        return view('tur-list', compact('paketWisata'));
+    }
     
     
     public function bloglist()

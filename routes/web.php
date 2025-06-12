@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/artikel', [ArmadaController::class, 'bloglist'])->name('bloglist');
+Route::get('/armada', [ArmadaController::class, 'armada'])->name('armada');
+Route::get('/paket-wisata', [ArmadaController::class, 'paketwisata'])->name('paketwisata');
 Route::get('/faq', function () {
     return view('faq');
 });

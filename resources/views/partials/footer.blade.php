@@ -16,10 +16,10 @@
                     <a href="/#layanan-ija-rental-mobil-padang" style="color: inherit; text-decoration: none;">
                         <p  data-lang-en="Our Services" data-lang-id="Layanan Kami">Layanan Kami</p>
                     </a>
-                    <a href="/#armada-ija-rental-mobil-padang" style="color: inherit; text-decoration: none;">
+                    <a href="/armada" style="color: inherit; text-decoration: none;">
                         <p data-lang-en="Our Fleet" data-lang-id="Armada Kami">Armada kami</p>
                     </a>
-                    <a href="/#tur-ija-rental-mobil-padang" style="color: inherit; text-decoration: none;">
+                    <a href="/paket-wisata" style="color: inherit; text-decoration: none;">
                         <p href="/#tur-ija-rental-mobil-padang" data-lang-en="Padang Tour" data-lang-id="Paket Wisata Padang">Paket Wisata Padang</p>
                     </a>
                     

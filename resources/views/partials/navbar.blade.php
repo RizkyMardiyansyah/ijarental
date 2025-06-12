@@ -42,8 +42,8 @@
                         <li class="has-submenu">
                             <a class="nav-link" href="/#layanan-ija-rental-mobil-padang" data-lang-en="Services" data-lang-id="Layanan">Layanan</a>
                             <ul class="submenu container">
-                                <li><a class="menu-link" href="/#armada-ija-rental-mobil-padang" data-lang-en="Fleet" data-lang-id="Armada">Armada</a></li>
-                                <li><a class="menu-link" href="/#tur-ija-rental-mobil-padang" data-lang-en="Tour" data-lang-id="Tur">Tur</a></li>
+                                <li><a class="menu-link" href="/armada" data-lang-en="Fleet" data-lang-id="Armada">Armada</a></li>
+                                <li><a class="menu-link" href="/paket-wisata" data-lang-en="Tour" data-lang-id="Tur">Tur</a></li>
                             </ul>
                         </li>  
                         <li> <a class="nav-link" href="/#kenapa-memilih-ija-rental-mobil-padang" data-lang-en="Why Us" data-lang-id="Keungulan">Keungulan</a></li>                                                        
