@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\blog;
+use App\Models\Blog;
 use App\Models\car;
 use App\Models\PaketWisata;
 use Illuminate\Http\Request;
@@ -13,7 +13,7 @@ class ArmadaController extends Controller
     {
         $cars = car::all();
         $paketWisata = PaketWisata::all();
-        $blogs = blog::latest()->take(3)->get();
+        $blogs = Blog::latest()->take(3)->get();
 
         return view('home', compact('cars', 'paketWisata', 'blogs'));
     }
