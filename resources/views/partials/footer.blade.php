@@ -42,7 +42,10 @@
                 <!-- Contact Us -->
                 <div style="margin-bottom: 20px;" class="col-lg-3 col-md-6 col-12 text-left">
                     <h6 style="font-weight:bolder" data-lang-en="Contact Us" data-lang-id="Hubungi Kami">Contact Us</h6>
-                    <a href="mailto:hi@mardsoft.com" style="color: inherit; text-decoration: none;">
+                    <a href="mailto:info@ijarental.com" style="color: inherit; text-decoration: none;">
+                        <p>info@ijarental.com</p>
+                    </a>
+                    <a href="mailto:zaharman2017@gmail.com" style="color: inherit; text-decoration: none;">
                         <p>zaharman2017@gmail.com</p>
                     </a>
                     <a style="margin-top: 10px;" href="https://wa.me/6281268258986" target="_blank" class="btn btn-message" data-lang-en="Get in Touch" data-lang-id="Hubungi Kami">
@@ -66,17 +69,20 @@
                     </footer>
                 </div>
                 <!-- Copyright Section -->
-                <div style="justify-content: center; align-item:center; display:flex;" class="order-md-1 copyright col-lg-6 col-md-6 col-12 ">
-                    <footer class="mt-4 text-left">
-                        <p style="text-transform:capitalize;" class="mb-0">
-                            Copyright <span id="year"></span>,  <span style="margin-left: 10px">{{ ucfirst(strtolower(config('app.name'))) }}.</span>
+                <div style="justify-content: center; align-items: center; display: flex;" class="order-md-1 copyright col-lg-6 col-md-6 col-12">
+                    <footer class="mt-4 text-left text-md-center">
+                        <p style="text-transform: capitalize;" class="mb-0">
+                            Copyright <span id="year"></span>, 
+                            <span style="margin-left: 10px">{{ ucfirst(strtolower(config('app.name'))) }}.</span>
+                            <span style="margin-left: 5px;">|  by <a href="https://mardsoft.com" target="_blank" rel="noopener noreferrer">Mardsoft.com</a></span>
                         </p>
-                        
+                
                         <script>
                             document.getElementById("year").textContent = new Date().getFullYear();
                         </script>
                     </footer>
                 </div>
+                
             </div>
         </div>
     </div>
