@@ -73,7 +73,6 @@ public static function form(Form $form): Form
                             ->label('Harga Sewa')
                             ->mask(RawJs::make('$money($input)'))
                             ->prefix('IDR')
-                            ->numeric()
                             ->disabled(fn (Get $get) => ! $get('tambah_harga')),
                     ])
                     ->columns(2),

@@ -67,8 +67,7 @@ class PaketWisataResource extends Resource
                                     ->label('Harga Paket')
                                     ->mask(RawJs::make('$money($input)'))
                                     ->prefix('IDR')
-                                    ->disabled(fn (Get $get) => ! $get('tambah_harga'))
-                                    ->numeric(),
+                                    ->disabled(fn (Get $get) => ! $get('tambah_harga')),
                             ]),
 
                         Forms\Components\Textarea::make('deskripsi')
