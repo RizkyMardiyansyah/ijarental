@@ -3092,7 +3092,7 @@ li.comment ol.comment-sub {
 	align-items: flex-start;
 	background-color: #f5f7fb;
 	padding: 5px;
-	margin: 3px;
+	margin: 5px;
 	border-radius: 10px;
 	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 
@@ -3190,7 +3190,6 @@ li.comment ol.comment-sub {
 .sidebar-widget img {
 	float: left;
 	width: 96px;
-	margin: 6px 14px 22px 0px;
 }
 
 .sidebar-widget p.date {
