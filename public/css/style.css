@@ -1335,7 +1335,7 @@ html[xmlns] .slides {
 /* Tab
 /*-----------------------------------------------------------------*/
 
-/* .pagination {
+.pagination {
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -1362,7 +1362,7 @@ html[xmlns] .slides {
     color: #aaa;
     cursor: not-allowed;
     background-color: #f9f9f9;
-} */
+}
 
 .content-tab-1 .nav {
 	text-align: center;
