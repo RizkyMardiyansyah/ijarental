@@ -192,11 +192,11 @@
 		<!--Start blog -->
 		<section class="section">
 			<div class="container">
-				<div class="row">
+				{{-- <div class="row"> --}}
 					<!-- Blog Post -->
-					<div class="">
-						<div class="post-content">												
-						</div>
+					<div class="work-main container">
+						<!-- Work Grid -->
+						<ul class="work-grid">
 						@foreach ($paketWisata as $paket)
             <li class="car-card">
                 <div class="car-image-wrapper">
@@ -231,7 +231,7 @@
             @endforeach
 					</div>	
 					<!-- /Blog Post -->
-				</div>
+				{{-- </div> --}}
 			</div>
 		</section>
 		<!--Start Contact-->
