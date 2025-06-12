@@ -187,7 +187,9 @@
 								<div class="post-desc">
 									<h4>{{ $blog->judul }}</h4>
 									<h5>{{ $blog->penulis }}/{{ $blog->published_at }}</h5>
-									<p>{!! $blog->konten !!}</p>
+									<div class="konten">
+										<p>{!! $blog->konten !!}</p>
+									</div>
 									 <div class="text-center">
 										 <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-blue-border" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
 									 </div>
