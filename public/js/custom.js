@@ -9,10 +9,92 @@
 	$("#pageloader").delay(1000).fadeOut("slow");
 	});
 
-
  /*------------------------------*/
 /*	Slider
 /*------------------------------*/
+
+// change navbar background
+    window.addEventListener("scroll", function () {
+      const header = document.getElementById("header");
+      if (window.scrollY > 10) {
+        header.classList.add("scrolled");
+      } else {
+        header.classList.remove("scrolled");
+      }
+    });
+// end
+
+// languange selector
+
+    window.addEventListener("scrolLanguage", function () {
+  const header = document.querySelector(".toggle-label");
+  if (header) {
+    if (window.scrollY > 10) {
+      header.classList.add("scroll");
+    } else {
+      header.classList.remove("scroll");
+    }
+  }
+});
+// end
+
+// send email
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      // Tampilkan loading
+      Swal.fire({
+        title: 'Mengirim...',
+        text: 'Email sedang dikirim.',
+        allowOutsideClick: false,
+        didOpen: () => {
+          Swal.showLoading();
+        }
+      });
+    });
+// end
+ 
+// language  
+    window.onload = function () {
+        // Ambil preferensi bahasa dari localStorage
+        const savedLanguage = localStorage.getItem('preferredLanguage') || 'id';
+
+        // Atur posisi toggle sesuai bahasa tersimpan
+        const languageToggle = document.getElementById('languageToggle');
+        languageToggle.checked = (savedLanguage === 'en');
+        
+        // Set bahasa saat halaman dimuat
+        switchLanguage(savedLanguage);
+        updateToggleText(savedLanguage);
+    };
+
+    // Tambahkan event listener pada toggle
+    const toggleCheckbox = document.getElementById('languageToggle');
+
+    toggleCheckbox.addEventListener('change', function () {
+        const selectedLang = toggleCheckbox.checked ? 'en' : 'id';
+
+        // Simpan preferensi bahasa ke localStorage
+        localStorage.setItem('preferredLanguage', selectedLang);
+
+        // Ubah bahasa dan teks toggle
+        switchLanguage(selectedLang);
+        updateToggleText(selectedLang);
+    });
+
+    function switchLanguage(lang) {
+        const elements = document.querySelectorAll('[data-lang-en]');
+
+        elements.forEach(element => {
+            element.textContent = element.getAttribute('data-lang-' + lang);
+        });
+    }
+
+    function updateToggleText(lang) {
+        const toggleInner = document.querySelector('.toggle-inner');
+        toggleInner.textContent = lang === 'en' ? 'EN' : 'IN';
+    }
+// end
+
+
 
 	setTimeout(function(){
 		$('.home .flexslider').height($(window).height()).flexslider({

@@ -70,25 +70,3 @@
         </div>
     </div>
 </header>
-
-<script>
-    window.addEventListener("scroll", function () {
-      const header = document.getElementById("header");
-      if (window.scrollY > 10) {
-        header.classList.add("scrolled");
-      } else {
-        header.classList.remove("scrolled");
-      }
-    });
-
-    window.addEventListener("scrolLanguage", function () {
-  const header = document.querySelector(".toggle-label");
-  if (header) {
-    if (window.scrollY > 10) {
-      header.classList.add("scroll");
-    } else {
-      header.classList.remove("scroll");
-    }
-  }
-});
-</script>
