@@ -2407,7 +2407,7 @@ html[xmlns] .slides {
 	text-overflow: ellipsis;
 }
 .post-desc p {
-	
+	margin: 0 !important;
   }
   
 .post-desc h5 {
