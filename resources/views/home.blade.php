@@ -3,13 +3,13 @@
 <html lang="en-gb" class="no-js">
   <head>
     <meta charset="utf-8">
-	<title>Rental Mobil Terpercaya di Kota Padang | Ija Rental</title>
+	<title>Rental Mobil Terpercaya Kota Padang di Ija Rental</title>
     <link rel="shortcut icon" href="img/favicon.ico" title="Ija Rental Mobil Terpercaya di Kota Padang">
-    <meta name="author" content="Ija Rental Padang">
+    <meta name="author" content="Rental Mobil Terpercaya Kota Padag di Ija Rental">
     <meta name="keywords" content="rental mobil padang, sewa mobil padang, rental kereta, rental mobil terpercaya di padang, rental mobil murah padang, sewa mobil harian padang">
     <meta name="description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
     <meta property="og:site_name" content="Mitra Adidaya Rekayasa Digital">
-    <meta property="og:title" content="Rental Mobil Terpercaya di Kota Padang | Ija Rental">
+    <meta property="og:title" content="Rental Mobil Terpercaya Kota Padag di Ija Rental">
     <meta property="og:description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
     <meta property="og:url" content="https://www.ijarental.com">
     <meta property="og:image" content="https://www.ijarental.com/images/og-image.png">
@@ -19,10 +19,10 @@
    
     <meta property="og:locale" content="id_ID" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Rental Mobil Terpercaya di Kota Padang | Ija Rental" />
+    <meta property="og:title" content="Rental Mobil Terpercaya Kota Padag di Ija Rental" />
     <meta property="og:description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda." />
     <meta property="og:url" content="https://www.ijarental.com/" />
-    <meta property="og:site_name" content="Ija Rental Mobil Padang" />
+    <meta property="og:site_name" content="Rental Mobil Terpercaya Kota Padag di Ija Rental" />
     <meta property="og:image" content="https://www.ijarental.com/images/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -57,7 +57,7 @@
               "@type": "WebPage",
               "@id": "https://ijarental.com/",
               "url": "https://ijarental.com/",
-              "name": "Ija Rental - Rental Mobil di Kota Padang",
+              "name": "Rental Mobil Terpercaya Kota Padag di Ija Rental",
               "isPartOf": {
                 "@id": "https://ijarental.com/#website"
               },
@@ -93,7 +93,7 @@
               "contentUrl": "https://ijarental.com/images/og-image.png",
               "width": 1200,
               "height": 628,
-              "caption": "Ija Rental - Rental Mobil di Kota Padang"
+              "caption": "Rental Mobil Terpercaya Kota Padag di Ija Rental"
             },
             {
               "@type": "BreadcrumbList",

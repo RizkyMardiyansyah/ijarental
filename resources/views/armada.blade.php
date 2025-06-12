@@ -4,157 +4,158 @@
         <meta charset="utf-8">
         <title>Rental Mobil {{ $car->nama }} Terpercaya di Kota Padang</title>
         <link rel="shortcut icon" href="img/favicon.ico" title="Ija Rental Mobil Terpercaya di Kota Padang">
-        <meta name="author" content="Ija Rental Padang">
-        <meta name="keywords" content="rental mobil padang, sewa mobil padang, rental kereta, rental mobil terpercaya di padang, rental mobil murah padang, sewa mobil harian padang">
-        <meta name="description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
-        <meta property="og:site_name" content="Mitra Adidaya Rekayasa Digital">
-        <meta property="og:title" content="Rental Mobil Terpercaya di Kota Padang | Ija Rental">
-        <meta property="og:description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
-        <meta property="og:url" content="https://www.ijarental.com">
-        <meta property="og:image" content="https://www.ijarental.com/images/og-image.png">
-         
-        <!-- Canonical -->
-        <link rel="canonical" href="https://www.ijarental.com/" />
-      
-        <meta property="og:locale" content="id_ID" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Rental Mobil Terpercaya di Kota Padang | Ija Rental" />
-        <meta property="og:description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda." />
-        <meta property="og:url" content="https://www.ijarental.com/" />
-        <meta property="og:site_name" content="Ija Rental Mobil Padang" />
-        <meta property="og:image" content="https://www.ijarental.com/images/og-image.png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:type" content="image/png" />
-
-        <!-- Optional: Artikel diupdate -->
-        <meta property="article:modified_time" content="2025-06-12T12:00:00+00:00" />
-            
-        <!-- Mobile Specific Metas -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-          
-    
-         <!--styles -->
-         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-         <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
-         
-         <link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
-         <link href="{{ asset('js/owl-carousel/owl.theme.css') }}" rel="stylesheet">
-         <link href="{{ asset('js/owl-carousel/owl.transitions.css') }}" rel="stylesheet">
-         <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
-         <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css" />
-         <link href="{{ asset('css/etlinefont.css') }}" rel="stylesheet">
-         <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" />
-         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-x..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-         
-         <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@graph": [
-                {
-                  "@type": "WebPage",
-                  "@id": "https://ijarental.com/",
-                  "url": "https://ijarental.com/",
-                  "name": "Ija Rental - Rental Mobil di Kota Padang",
-                  "isPartOf": {
-                    "@id": "https://ijarental.com/#website"
-                  },
-                  "about": {
-                    "@id": "https://ijarental.com/#organization"
-                  },
-                  "primaryImageOfPage": {
-                    "@id": "https://ijarental.com/#primaryimage"
-                  },
-                  "image": {
-                    "@id": "https://ijarental.com/#primaryimage"
-                  },
-                  "thumbnailUrl": "https://ijarental.com/images/og-image.png",
-                  "description": "Ija Rental menyediakan layanan sewa mobil terpercaya di Kota Padang dengan harga kompetitif dan pelayanan cepat, nyaman, serta mudah.",
-                  "breadcrumb": {
-                    "@id": "https://ijarental.com/#breadcrumb"
-                  },
-                  "inLanguage": "id-ID",
-                  "potentialAction": [
-                    {
-                      "@type": "ReadAction",
-                      "target": [
-                        "https://ijarental.com/"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "@type": "ImageObject",
-                  "inLanguage": "id-ID",
-                  "@id": "https://ijarental.com/#primaryimage",
-                  "url": "https://ijarental.com/images/og-image.png",
-                  "contentUrl": "https://ijarental.com/images/og-image.png",
-                  "width": 1200,
-                  "height": 628,
-                  "caption": "Ija Rental - Rental Mobil di Kota Padang"
-                },
-                {
-                  "@type": "BreadcrumbList",
-                  "@id": "https://ijarental.com/#breadcrumb",
-                  "itemListElement": [
-                    {
-                      "@type": "ListItem",
-                      "position": 1,
-                      "name": "Beranda",
-                      "item": "https://ijarental.com/"
-                    }
-                  ]
-                },
-                {
-                  "@type": "WebSite",
-                  "@id": "https://ijarental.com/#website",
-                  "url": "https://ijarental.com/",
-                  "name": "Ija Rental",
-                  "description": "Layanan sewa mobil terpercaya di Kota Padang dengan berbagai pilihan kendaraan dan proses booking mudah.",
-                  "publisher": {
-                    "@id": "https://ijarental.com/#organization"
-                  },
-                  "inLanguage": "id-ID",
-                  "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": {
-                      "@type": "EntryPoint",
-                      "urlTemplate": "https://ijarental.com/?s={search_term_string}"
-                    },
-                    "query-input": {
-                      "@type": "PropertyValueSpecification",
-                      "valueRequired": true,
-                      "valueName": "search_term_string"
-                    }
-                  }
-                },
-                {
-                  "@type": "Organization",
-                  "@id": "https://ijarental.com/#organization",
-                  "name": "Ija Rental",
-                  "url": "https://ijarental.com/",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "inLanguage": "id-ID",
-                    "@id": "https://ijarental.com/#logo",
-                    "url": "https://ijarental.com/images/logo.png",
-                    "contentUrl": "https://ijarental.com/images/logo.png",
-                    "width": 600,
-                    "height": 60,
-                    "caption": "Logo Ija Rental"
-                  },
-                  "image": {
-                    "@id": "https://ijarental.com/#logo"
-                  },
-                  "sameAs": [
-                    "https://www.facebook.com/ijarental",
-                    "https://www.instagram.com/ijarental",
-                    "https://www.linkedin.com/company/ijarental"
-                  ]
-                }
-              ]
-            }
-            </script>
+		  <meta name="author" content="Rental Mobil Terpercaya Kota Padag di Ija Rental">
+		  <meta name="keywords" content="rental mobil padang, sewa mobil padang, rental kereta, rental mobil terpercaya di padang, rental mobil murah padang, sewa mobil harian padang">
+		  <meta name="description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
+		  <meta property="og:site_name" content="Mitra Adidaya Rekayasa Digital">
+		  <meta property="og:title" content="Rental Mobil Terpercaya Kota Padag di Ija Rental">
+		  <meta property="og:description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.">
+		  <meta property="og:url" content="https://www.ijarental.com">
+		  <meta property="og:image" content="https://www.ijarental.com/images/og-image.png">
+		  
+		  <!-- Canonical -->
+		  <link rel="canonical" href="https://www.ijarental.com/" />
+		 
+		  <meta property="og:locale" content="id_ID" />
+		  <meta property="og:type" content="website" />
+		  <meta property="og:title" content="Rental Mobil Terpercaya Kota Padag di Ija Rental" />
+		  <meta property="og:description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda." />
+		  <meta property="og:url" content="https://www.ijarental.com/" />
+		  <meta property="og:site_name" content="Rental Mobil Terpercaya Kota Padag di Ija Rental" />
+		  <meta property="og:image" content="https://www.ijarental.com/images/og-image.png" />
+		  <meta property="og:image:width" content="1200" />
+		  <meta property="og:image:height" content="630" />
+		  <meta property="og:image:type" content="image/png" />
+	  
+		  <!-- Optional: Artikel diupdate -->
+		  <meta property="article:modified_time" content="2025-06-12T12:00:00+00:00" />
+			  
+			  
+		  <!-- Mobile Specific Metas -->
+		  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			
+	  
+		   <!--styles -->
+		   <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+		   <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet">
+		   
+		   <link href="{{ asset('js/owl-carousel/owl.carousel.css') }}" rel="stylesheet">
+		   <link href="{{ asset('js/owl-carousel/owl.theme.css') }}" rel="stylesheet">
+		   <link href="{{ asset('js/owl-carousel/owl.transitions.css') }}" rel="stylesheet">
+		   <link href="{{ asset('css/magnific-popup.css') }}" rel="stylesheet">
+		   <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css" />
+		   <link href="{{ asset('css/etlinefont.css') }}" rel="stylesheet">
+		   <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" />
+		   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-x..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+		   
+		   <script type="application/ld+json">
+			  {
+				"@context": "https://schema.org",
+				"@graph": [
+				  {
+					"@type": "WebPage",
+					"@id": "https://ijarental.com/",
+					"url": "https://ijarental.com/",
+					"name": "Rental Mobil Terpercaya Kota Padag di Ija Rental",
+					"isPartOf": {
+					  "@id": "https://ijarental.com/#website"
+					},
+					"about": {
+					  "@id": "https://ijarental.com/#organization"
+					},
+					"primaryImageOfPage": {
+					  "@id": "https://ijarental.com/#primaryimage"
+					},
+					"image": {
+					  "@id": "https://ijarental.com/#primaryimage"
+					},
+					"thumbnailUrl": "https://ijarental.com/images/og-image.png",
+					"description": "Ija Rental menyediakan layanan sewa mobil terpercaya di Kota Padang dengan harga kompetitif dan pelayanan cepat, nyaman, serta mudah.",
+					"breadcrumb": {
+					  "@id": "https://ijarental.com/#breadcrumb"
+					},
+					"inLanguage": "id-ID",
+					"potentialAction": [
+					  {
+						"@type": "ReadAction",
+						"target": [
+						  "https://ijarental.com/"
+						]
+					  }
+					]
+				  },
+				  {
+					"@type": "ImageObject",
+					"inLanguage": "id-ID",
+					"@id": "https://ijarental.com/#primaryimage",
+					"url": "https://ijarental.com/images/og-image.png",
+					"contentUrl": "https://ijarental.com/images/og-image.png",
+					"width": 1200,
+					"height": 628,
+					"caption": "Rental Mobil Terpercaya Kota Padag di Ija Rental"
+				  },
+				  {
+					"@type": "BreadcrumbList",
+					"@id": "https://ijarental.com/#breadcrumb",
+					"itemListElement": [
+					  {
+						"@type": "ListItem",
+						"position": 1,
+						"name": "Beranda",
+						"item": "https://ijarental.com/"
+					  }
+					]
+				  },
+				  {
+					"@type": "WebSite",
+					"@id": "https://ijarental.com/#website",
+					"url": "https://ijarental.com/",
+					"name": "Ija Rental",
+					"description": "Layanan sewa mobil terpercaya di Kota Padang dengan berbagai pilihan kendaraan dan proses booking mudah.",
+					"publisher": {
+					  "@id": "https://ijarental.com/#organization"
+					},
+					"inLanguage": "id-ID",
+					"potentialAction": {
+					  "@type": "SearchAction",
+					  "target": {
+						"@type": "EntryPoint",
+						"urlTemplate": "https://ijarental.com/?s={search_term_string}"
+					  },
+					  "query-input": {
+						"@type": "PropertyValueSpecification",
+						"valueRequired": true,
+						"valueName": "search_term_string"
+					  }
+					}
+				  },
+				  {
+					"@type": "Organization",
+					"@id": "https://ijarental.com/#organization",
+					"name": "Ija Rental",
+					"url": "https://ijarental.com/",
+					"logo": {
+					  "@type": "ImageObject",
+					  "inLanguage": "id-ID",
+					  "@id": "https://ijarental.com/#logo",
+					  "url": "https://ijarental.com/images/logo.png",
+					  "contentUrl": "https://ijarental.com/images/logo.png",
+					  "width": 600,
+					  "height": 60,
+					  "caption": "Logo Ija Rental"
+					},
+					"image": {
+					  "@id": "https://ijarental.com/#logo"
+					},
+					"sameAs": [
+					  "https://www.facebook.com/ijarental",
+					  "https://www.instagram.com/ijarental",
+					  "https://www.linkedin.com/company/ijarental"
+					]
+				  }
+				]
+			  }
+			  </script>
     
 	<body  data-spy="scroll" data-target="#main-menu">
  
