@@ -193,6 +193,10 @@
 		<section class="section">
 			<div class="container">
 				<div class="row">
+					<div class="title-box text-center">
+						<h2 class="title">Artikel Terbaru</h2>
+						<p class="info">Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang.</p>
+					</div>
 					<!-- Blog Post -->
 					<div class="">
 						<div class="post-content">												

@@ -192,6 +192,10 @@
 		<!--Start blog -->
 		<section class="section">
 			<div class="container">
+				<div class="title-box text-center">
+                    <h2 class="title">Daftar Armada Kami</h2>
+                    <p class="info">Armada mobil terawat di Padang dengan harga terjangkau hanya di Ija Rental.</p>
+                 </div>
 				{{-- <div class="row"> --}}
 					<!-- Blog Post -->
 					<div class="work-main container">

@@ -192,6 +192,10 @@
 		<!--Start blog -->
 		<section class="section">
 			<div class="container">
+				<div class="title-box text-center">
+					<h2 class="title">Paket Wisata Padang</h2>
+					<p class="info">Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan!</p>
+				</div>
 				{{-- <div class="row"> --}}
 					<!-- Blog Post -->
 					<div class="work-main container">
