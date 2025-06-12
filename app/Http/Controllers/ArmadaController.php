@@ -20,12 +20,12 @@ class ArmadaController extends Controller
 
     public function armada()
     {
-        $cars = car::all();
+        $cars = car::latest()->paginate(9);
         return view('armada-list', compact('cars'));
     }
     public function paketwisata()
     {
-        $paketWisata = PaketWisata::all();
+        $paketWisata = PaketWisata::latest()->paginate(9);
         return view('tur-list', compact('paketWisata'));
     }
     

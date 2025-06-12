@@ -229,6 +229,9 @@
                 </div>
             </li>
             @endforeach
+			<div style="margin-top: 10px" class="text-center mt-4">
+				{{ $blogs->links('pagination::simple-default') }}
+			</div>
 					</div>	
 					<!-- /Blog Post -->
 				{{-- </div> --}}
