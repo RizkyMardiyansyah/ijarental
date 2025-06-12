@@ -598,7 +598,6 @@
 						<!-- Work Item -->
 						
                             @foreach ($cars as $car)
-                            <div  style="padding: 10px;">
                             <li class="car-card">
                                 <div class="car-image-wrapper">
                                     <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
@@ -638,7 +637,6 @@
                                     </div>
                                 </div>
                             </li>
-                        </div>
                             
                             @endforeach
                         
@@ -671,7 +669,6 @@
         <ul class="work-grid">
             <!-- Work Item -->
             @foreach ($paketWisata as $paket)
-            
             <li class="car-card">
                 <div class="car-image-wrapper">
                     <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
