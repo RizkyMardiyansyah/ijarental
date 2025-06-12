@@ -239,7 +239,7 @@
 											<img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
 										</a>
 									</div>	
-									<div class="blog-info">
+									<div class="blog-info pl-2">
 										<p class="sidebar-widget-title mb-1">
 											<a href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
 												{!! $blog->judul !!}
