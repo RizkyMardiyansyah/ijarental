@@ -57,6 +57,7 @@
               "@type": "WebPage",
               "@id": "https://ijarental.com/",
               "url": "https://ijarental.com/",
+              "logo": "https://www.ijarental.com/images/icon.png",
               "name": "Rental Mobil Terpercaya Kota Padag di Ija Rental",
               "isPartOf": {
                 "@id": "https://ijarental.com/#website"
@@ -93,7 +94,7 @@
               "contentUrl": "https://ijarental.com/images/og-image.png",
               "width": 1200,
               "height": 628,
-              "caption": "Rental Mobil Terpercaya Kota Padag di Ija Rental"
+              "caption": "Rental Mobil Terpercaya Kota Padang di Ija Rental"
             },
             {
               "@type": "BreadcrumbList",
