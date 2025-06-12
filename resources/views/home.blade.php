@@ -855,6 +855,8 @@
                                 @csrf
                                 <div class="row">
                                   <div class="col-md-4">
+                                    <input type="text" name="website" style="display:none" tabindex="-1" autocomplete="off">
+
                                     <input class="form-control" name="name" placeholder="Full Name" type="text" required>
                                   </div>
                                   <div class="col-md-4">
