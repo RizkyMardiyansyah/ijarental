@@ -647,7 +647,11 @@
 				</div>
 			</section>
   <!--End Fleet-->
+
+
   <!--Start Tour-->
+@if(count($paketWisata) > 0)
+<section id="tur-ija-rental-mobil-padang" class="section">
   <section id="tur-ija-rental-mobil-padang" class="section">
     <!-- Filtering -->
     <div class="title-box text-center">
@@ -706,6 +710,7 @@
         
     </div>
 </section>
+@endif
 <!--End Tour-->
  
  
