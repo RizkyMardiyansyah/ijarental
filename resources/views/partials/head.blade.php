@@ -1,5 +1,6 @@
 <meta name="description" content="Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda." />
     <link rel="canonical" href="https://ijarental.com/" />
+    <link rel="shortcut icon" href="img/favicon.ico">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Rental Mobil Terpercaya Kota Padang di Ija Rental" />
@@ -8,9 +9,9 @@
     <meta property="og:site_name" content="Ija Rental Mobil Padang" />
     <meta property="article:modified_time" content="2024-08-09T16:34:58+00:00" />
     <meta property="og:image" content="https://www.ijarental.com/images/og-image.png"/>
-    <meta property="og:image:width" content="340" />
+    <meta property="og:image:width" content="597" />
     <meta property="og:image:height" content="340" />
-    <meta property="og:image:type" content="image/webp" />
+    <meta property="og:image:type" content="image/png" />
     <meta name="twitter:card" content="summary_large_image" />
     <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=GT-WFFWN2JQ&amp;cx=c&amp;gtm=45He56a1v9199908238za200&amp;tag_exp=101509157~103116026~103200004~103233427~103351869~103351871~104617979~104617981~104661466~104661468~104684204~104684207"></script>
     <script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-PXHJJ7Z9"></script>
@@ -99,7 +100,7 @@
             "url": "https://ijarental.com/images/icon.png",
             "contentUrl": "https://ijarental.com/images/icon.png",
             "width": 480,
-            "height": 92,
+            "height": 480,
             "caption": "Ija Rental Mobil Padang"
           },
           "image": {
@@ -122,7 +123,7 @@
      <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css" />
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-x..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" href="https://ijarental.com/images/icon.png" sizes="32x32" />
-    <link rel="icon" href="https://ijarental.com/images/icon.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="https://ijarental.com/images/icon.png" />
+    <link rel="icon" href="https://ijarental.com/img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="https://ijarental.com/img/favicon.ico" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://ijarental.com/img/favicon.ico" />
     <meta name="msapplication-TileImage" content="https://ijarental.com/images/icon.png" />
