@@ -21,6 +21,7 @@
           "@type": "WebPage",
           "@id": "https://ijarental.com/",
           "url": "https://ijarental.com/",
+          "logo": "https://www.ijarental.com/images/icon.png",
           "name": "Rental Mobil Terpercaya Kota Padang di Ija Rental",
           "isPartOf": {
             "@id": "https://ijarental.com/#website"
@@ -67,6 +68,7 @@
           "@type": "WebSite",
           "@id": "https://ijarental.com/#website",
           "url": "https://ijarental.com/",
+          "logo": "https://www.ijarental.com/images/icon.png",
           "name": "Ija Rental Mobi Padang",
           "description": "Ija Rental menyediakan layanan rental mobil terpercaya dan murah di Kota Padang. Booking mudah, mobil lengkap, dan pelayanan cepat untuk perjalanan nyaman Anda.",
           "publisher": {
@@ -94,8 +96,8 @@
             "@type": "ImageObject",
             "inLanguage": "en-US",
             "@id": "https://ijarental.com/#/schema/logo/image/",
-            "url": "https://ijarental.com/images/Ij_rental_logo_putih.svg",
-            "contentUrl": "https://ijarental.com/images/Ij_rental_logo_putih.svg",
+            "url": "https://ijarental.com/images/icon.png",
+            "contentUrl": "https://ijarental.com/images/icon.png",
             "width": 480,
             "height": 92,
             "caption": "Ija Rental Mobil Padang"
