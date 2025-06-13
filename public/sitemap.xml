@@ -1,52 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
     <url>
-        <loc>https://ijarental.com/</loc>
-        <lastmod>2025-05-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-
+    <loc>https://ijarental.com/</loc>
+            </url>
     <url>
-        <loc>https://ijarental.com/armada</loc>
-        <lastmod>2025-05-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-        <image:image>
-            <image:loc>https://ijarental.com/images/slider/2.jpg</image:loc>
-            <image:caption>Rental Mobil Terpercaya Padang</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://ijarental.com/images/slider/1.jpg</image:loc>
-            <image:caption>Rental Mobil Termurah Padang</image:caption>
-        </image:image>
-    </url>
-
+    <loc>https://ijarental.com/armada</loc>
+            </url>
     <url>
-        <loc>https://ijarental.com/paket-wisata</loc>
-        <lastmod>2025-05-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-        <image:image>
-            <image:loc>https://ijarental.com/images/parallax/testimonials.jpg</image:loc>
-            <image:caption>Paket Wisata Keliling Padang Sumatera Barat</image:caption>
-        </image:image>
-    </url>
-
+    <loc>https://ijarental.com/paket-wisata</loc>
+            </url>
     <url>
-        <loc>https://ijarental.com/artikel</loc>
-        <lastmod>2025-05-12</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-    </url>
-
+    <loc>https://ijarental.com/faq</loc>
+            </url>
     <url>
-        <loc>https://ijarental.com/faq</loc>
-        <lastmod>2025-05-12</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-
+    <loc>https://ijarental.com/toyota-veloz-2</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/toyota-innova-bensin-3</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/toyota-avanza-1</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/toyota-innova-diesel-4</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/mintubishi-pajero-6</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/toyota-fortuner-5</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/toyota-hiace-7</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/detail-paket-tes-2</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/toyota-alphard-8</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/bus-medium-30-9</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/bus-long-45-10</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/armada?page=2</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-mobil-pariaman-terdekat-nyaman-aman-dan-fleksibel-10</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-mobil-daerah-padang-temukan-fleksibilitas-perjalanan-8</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-mobil-innova-padang-nyaman-luas-bebas-jelajahi-9</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-jasa-sewa-mobil-padang-jelajahi-pesona-ciptakan-kenangan-5</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel?page=2</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-mobil-avanza-padang-nyaman-aman-tak-terlupakan-6</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-bus-padang-nyaman-aman-dan-terjangkau-2</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-mobil-di-kota-padang-nyaman-dan-terjangkau-3</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-mobil-bulanan-padang-solusi-hemat-dan-fleksibel-7</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/armada?page=1</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-sewa-rental-mobil-padang-solusi-mobilitas-praktis-4</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel-itinerary-padang-bukittinggi-4-hari-3-malam-4d3n-1</loc>
+            </url>
+    <url>
+    <loc>https://ijarental.com/artikel?page=1</loc>
+            </url>
 </urlset>

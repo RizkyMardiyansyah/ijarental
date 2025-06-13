@@ -14,6 +14,7 @@ class ArmadaController extends Controller
         $cars = car::all();
         $paketWisata = PaketWisata::all();
         $blogs = Blog::latest()->take(3)->get();
+        
 
         return view('home', compact('cars', 'paketWisata', 'blogs'));
     }
