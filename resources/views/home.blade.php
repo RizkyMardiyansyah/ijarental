@@ -25,7 +25,7 @@
               </div>
             </div>
           </li>
-          {{-- <li class="secondary">
+          <li class="secondary">
             <div class="slider-text-wrapper">
               <div class="container">
                 <h1 class="big" data-lang-en="Affordable Car Rental in Padang" data-lang-id="Sewa Mobil Murah di Padang">Sewa Mobil Murah di Padang</h1>
@@ -33,8 +33,8 @@
                 <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Sewa Mobil Murah di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
-          </li> --}}
-          {{-- <li class="third">
+          </li>
+          <li class="third">
             <div class="slider-text-wrapper">
               <div class="container">
                 <h1 class="big" data-lang-en="Car Rental Service in Padang" data-lang-id="Jasa Rental Mobil Kota Padang">Jasa Rental Mobil Kota Padang</h1>
@@ -42,7 +42,7 @@
                 <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Jasa Rental Mobil Kota Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
-          </li> --}}
+          </li>
         </ul>
       </div>
     </section>
