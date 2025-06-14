@@ -3661,6 +3661,7 @@ footer i{
 
  @media (max-width:480px) {
 .slider-text-wrapper {
+		padding: 10px;
 		position: absolute;
 		width: 100%;
 		height: 100vh;
