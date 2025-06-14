@@ -449,7 +449,7 @@
         useCSS: !0,
         touch: !0,
         video: !1,
-        controlNav: 0,
+        controlNav: !0,
         directionNav: 0,
         prevText: "Previous",
         nextText: "Next",
