@@ -1267,7 +1267,7 @@ section {
 	left: 0;
 	top: 0;
 	right: 0;
-	z-index: 100;
+	z-index: 1;
 	width: 100%;
 	height: 100%;
 }
@@ -3660,17 +3660,6 @@ footer i{
 
 
  @media (max-width:480px) {
-.slider-text-wrapper {
-		padding: 10px;
-		position: absolute;
-		width: 100%;
-		height: 100vh;
-		top: 50%;
-		left: 0;
-		margin-top: -125px;
-		text-align: center;
-		z-index:999;
-	}
 	 
 .big {
     font-size: 35px;
