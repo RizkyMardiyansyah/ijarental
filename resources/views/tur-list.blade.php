@@ -33,27 +33,32 @@
         <!-- Blog Post -->
         <div class="work-main container">
           <!-- Work Grid -->
-          <ul class="work-grid"> @foreach ($paketWisata as $paket) <li class="car-card">
-              <div class="car-image-wrapper">
-                <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
-              </div>
-              <div class="car-info">
-                <h3 class="car-title">{{ $paket->nama_paket }}</h3>
-                <div class="car-specs">
-                  <div class="spec-item">
-                    <i class="fa fa-clock"></i>
-                    <span>Durasi {{ $paket->durasi }}</span>
+          <ul class="work-grid"> 
+            @foreach ($paketWisata as $paket) 
+            <li class="car-card">
+              <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}">
+                <div class="car-image-wrapper">
+                  <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
+                </div>
+                <div class="car-info">
+                  <h3 class="car-title">{{ $paket->nama_paket }}</h3>
+                  <div class="car-specs">
+                    <div class="spec-item">
+                      <i class="fa fa-clock"></i>
+                      <span>Durasi {{ $paket->durasi }}</span>
+                    </div>
+                  </div>
+                  <div class="car-footer">
+                    <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
+                    <div class="car-buttons">
+                      <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
+                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                    </div>
                   </div>
                 </div>
-                <div class="car-footer">
-                  <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
-                  <div class="car-buttons">
-                    <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
-                    <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
-                  </div>
-                </div>
-              </div>
-            </li> @endforeach
+              </a>
+            </li> 
+            @endforeach
         </div>
         <!-- /Blog Post -->
         {{-- </div> --}}

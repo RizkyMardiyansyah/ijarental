@@ -20,16 +20,27 @@
     </section>
     <!--End page-header -->
     <!--Start single-work -->
-    <section id="single-work" class="section">
+    <script>
+      function setImageHeight() {
+        const workDetail = document.querySelector('.work-detail');
+        const armadaImageContainer = document.querySelector('.armadaImageContainer');
+    
+          armadaImageContainer.style.height = workDetail.offsetHeight + 'px';
+        
+      }    
+      window.addEventListener('load', setImageHeight);
+      window.addEventListener('resize', setImageHeight);
+    </script>
+    <section id="single-work" class="section" style="padding-top:80px">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <div class="item">
+            <div style="padding-top: 20px" class="item armadaImageContainer">
               <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama_paket }}">
             </div>
           </div>
           <!--Start Work Detail-->
-          <div class="col-md-5 work-detail">
+          <div style="padding-top: 20px" class="col-md-5 work-detail">
             <h3 class="margin-bottom-15">{{ $paket->nama_paket}} </h3>
             <p>{{ $paket->deskripsi}}</p>
             <ul class="work-detail-list">
@@ -40,7 +51,7 @@
                 <span>Harga</span> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif
               </li>
             </ul>
-            <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-blue-border">Pesan Sekarang</a>
+            <a href="https://wa.me/6281268258986" target="_blank" style="width: auto" class="btn btn-read">Pesan Sekarang</a>
           </div>
           <!--End Work Detail-->
         </div>

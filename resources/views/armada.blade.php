@@ -7,7 +7,8 @@
     <title>Rental Mobil {{ $car->nama }} Terpercaya di Kota Padang</title> @include('partials.head')
   </head>
   <body data-spy="scroll" data-target="#main-menu">
-    <!--Start Navigation--> @include('partials.navbar2')
+    <!--Start Navigation--> 
+    @include('partials.navbar2')
     <!--End Navigation-->
     <!--start page-header -->
     <section id="armada-rental-mobil-padang" class="parallax">
@@ -20,16 +21,28 @@
     </section>
     <!--End page-header -->
     <!--Start single-work -->
-    <section id="single-work" class="section">
+    <script>
+      function setImageHeight() {
+        const workDetail = document.querySelector('.work-detail');
+        const armadaImageContainer = document.querySelector('.armadaImageContainer');
+    
+          armadaImageContainer.style.height = workDetail.offsetHeight + 'px';
+        
+      }
+    
+      window.addEventListener('load', setImageHeight);
+      window.addEventListener('resize', setImageHeight);
+    </script>
+    <section style="padding-top: 80px" id="single-work" class="section armada">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <div class="item">
+            <div style="padding-top: 20px;" class="item armadaImageContainer">
               <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
             </div>
           </div>
           <!--Start Work Detail-->
-          <div class="col-md-5 work-detail">
+          <div style="padding-top:20px" class="col-md-5 work-detail">
             <h3 class="margin-bottom-15">{{ $car->nama}} </h3>
             <p>{{ $car->deskripsi}}</p>
             <ul class="work-detail-list">
@@ -46,7 +59,7 @@
                 <span>Harga</span>@if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif
               </li>
             </ul>
-            <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-blue-border">Rental Sekarang</a>
+            <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-read" style="width: auto;">Rental Sekarang</a>
           </div>
           <!--End Work Detail-->
         </div>
@@ -54,6 +67,7 @@
       </div>
       <!--/ container-->
     </section>
+    
     <!--End single-work -->
     <!--Start Contact-->
     @include('partials.contact')

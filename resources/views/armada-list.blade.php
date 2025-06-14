@@ -33,35 +33,40 @@
         <!-- Blog Post -->
         <div class="work-main container">
           <!-- Work Grid -->
-          <ul class="work-grid"> @foreach ($cars as $car) <li class="car-card">
-              <div class="car-image-wrapper">
-                <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
-              </div>
-              <div class="car-info">
-                <h3 class="car-title">{{ $car->nama }}</h3>
-                <div class="car-specs">
-                  <div class="spec-item">
-                    <i class="fa fa-users"></i>
-                    <span>Kapasitas {{ $car->kapasitas }}</span>
+          <ul class="work-grid"> 
+            @foreach ($cars as $car) 
+            <li class="car-card">
+              <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}">
+                <div class="car-image-wrapper">
+                  <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
+                </div>
+                <div class="car-info">
+                  <h3 class="car-title">{{ $car->nama }}</h3>
+                  <div class="car-specs">
+                    <div class="spec-item">
+                      <i class="fa fa-users"></i>
+                      <span>Kapasitas {{ $car->kapasitas }}</span>
+                    </div>
+                    <div class="spec-item">
+                      <i class="fa fa-clock"></i>
+                      <span>Durasi Rental {{ $car->durasi_rental }}</span>
+                    </div>
+                    <div class="spec-item">
+                      <i class="fa fa-check-circle"></i>
+                      <span>Harga Termasuk {{ $car->harga_termasuk }}</span>
+                    </div>
                   </div>
-                  <div class="spec-item">
-                    <i class="fa fa-clock"></i>
-                    <span>Durasi Rental {{ $car->durasi_rental }}</span>
-                  </div>
-                  <div class="spec-item">
-                    <i class="fa fa-check-circle"></i>
-                    <span>Harga Termasuk {{ $car->harga_termasuk }}</span>
+                  <div class="car-footer">
+                    <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
+                    <div class="car-buttons">
+                      <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
+                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                    </div>
                   </div>
                 </div>
-                <div class="car-footer">
-                  <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
-                  <div class="car-buttons">
-                    <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
-                    <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
-                  </div>
-                </div>
-              </div>
-            </li> @endforeach
+              </a>
+            </li> 
+            @endforeach
         </div>
         <!-- /Blog Post -->
         {{-- </div> --}}

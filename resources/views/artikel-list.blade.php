@@ -32,7 +32,9 @@
           </div>
           <!-- Blog Post -->
           <div class="">
-            <div class="post-content"></div> @foreach ($blogs as $blog) <div class="col-md-4">
+            <div class="post-content"></div> 
+            @foreach ($blogs as $blog) 
+            <div class="col-md-4">
               <a href="/artikel-{{ Str::slug($blog->judul) }}-{{ $blog->id }}">
                 <div class="blog-post">
                   <div class="post-media">
@@ -45,12 +47,13 @@
                       <p>{!! $blog->konten !!}</p>
                     </div>
                     <div class="text-center">
-                      <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-blue-border" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
+                      <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-read" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
                     </div>
                   </div>
                 </div>
               </a>
-            </div> @endforeach
+            </div> 
+            @endforeach
           </div>
           <!-- /Blog Post -->
         </div>

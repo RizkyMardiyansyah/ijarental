@@ -20,7 +20,7 @@
                 <img src="images/slider/1.jpg" alt="Best car rental in Padang" style="display:none;">
                 <h1 class="big" data-lang-en="Car Rental in Padang" data-lang-id="Rental Mobil di Kota Padang">Rental Mobil di Kota Padang</h1>
                 <h2 class="small" data-lang-en="Reliable car rental service for personal or business needs in Padang" data-lang-id="Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang">Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang</h2>
-                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white" title="Pesan Rental Mobil di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Pesan Rental Mobil di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
           </li>
@@ -30,7 +30,7 @@
                 <img src="images/slider/2.jpg" alt="Affordable Car Rental in Padang" style="display:none;">
                 <h1 class="big" data-lang-en="Affordable Car Rental in Padang" data-lang-id="Sewa Mobil Murah di Padang">Sewa Mobil Murah di Padang</h1>
                 <h2 class="small" data-lang-en="Enjoy a safe and budget-friendly trip with the best car rental service in Padang" data-lang-id="Nikmati perjalanan aman dan hemat dengan layanan rental mobil terbaik di kota Padang">Nikmati perjalanan aman dan hemat dengan layanan rental mobil terbaik di kota Padang</h2>
-                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white" title="Sewa Mobil Murah di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Sewa Mobil Murah di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
           </li>
@@ -40,7 +40,7 @@
                 <img src="images/slider/3.jpg" alt="Car Rental Service in Padang" style="display:none;">
                 <h1 class="big" data-lang-en="Car Rental Service in Padang" data-lang-id="Jasa Rental Mobil Kota Padang">Jasa Rental Mobil Kota Padang</h1>
                 <h2 class="small" data-lang-en="Wide range of vehicles, fast service, and easy booking process" data-lang-id="Pilihan kendaraan lengkap, layanan cepat, dan proses pemesanan yang mudah">Pilihan kendaraan lengkap, layanan cepat, dan proses pemesanan yang mudah</h2>
-                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white" title="Jasa Rental Mobil Kota Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Jasa Rental Mobil Kota Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
           </li>
@@ -76,7 +76,7 @@
                 <li>
                   <a aria-expanded="true" href="#tab-content-3" data-toggle="tab">
                     <i class="fa fa-map-location-dot"></i>
-                    <h4 data-lang-id="Paket Wisata Padang" data-lang-en="Padang Tour">Paket Wisata Padang</h4>
+                    <h4 data-lang-id="Paket Wisata Padang" data-lang-en="Padang Travel Itinerary">Paket Wisata Padang</h4>
                   </a>
                   <div class="tab-arrow"></div>
                 </li>
@@ -199,8 +199,8 @@
                             <i class="fa fa-map-marked-alt"></i>
                           </div>
                           <div class="info">
-                            <h4 data-lang-en="Padang Tour Package" data-lang-id="Paket Wisata Padang">Paket Wisata Padang</h4>
-                            <p data-lang-en="Explore the beauty of Padang and its surroundings with our tour packages, guided by experienced drivers." data-lang-id="Jelajahi keindahan Padang dan sekitarnya dengan paket wisata kami, ditemani sopir berpengetahuan luas."> Jelajahi keindahan Padang dan sekitarnya dengan paket wisata kami, ditemani sopir berpengetahuan luas. </p>
+                            <h4 data-lang-en="Padang Travel Itinerary" data-lang-id="Paket Wisata Padang">Paket Wisata Padang</h4>
+                            <p data-lang-en="Explore the beauty of Padang and its surroundings with our Travel Itinerary packages, guided by experienced drivers." data-lang-id="Jelajahi keindahan Padang dan sekitarnya dengan paket wisata kami, ditemani sopir berpengetahuan luas."> Jelajahi keindahan Padang dan sekitarnya dengan paket wisata kami, ditemani sopir berpengetahuan luas. </p>
                           </div>
                         </div>
                         <!-- Fitur: Kunjungan ke Tempat Wisata -->
@@ -361,35 +361,40 @@
       <div class="work-main container">
         <!-- Work Grid -->
         <ul class="work-grid">
-          <!-- Work Item --> @foreach ($cars as $car) <li class="car-card">
-            <div class="car-image-wrapper">
-              <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
-            </div>
-            <div class="car-info">
-              <h3 class="car-title">{{ $car->nama }}</h3>
-              <div class="car-specs">
-                <div class="spec-item">
-                  <i class="fa fa-users"></i>
-                  <span>Kapasitas {{ $car->kapasitas }}</span>
+          <!-- Work Item --> 
+          @foreach ($cars as $car) 
+          <li class="car-card">
+            <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}">
+              <div class="car-image-wrapper">
+                <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
+              </div>
+              <div class="car-info">
+                <h3 class="car-title">{{ $car->nama }}</h3>
+                <div class="car-specs">
+                  <div class="spec-item">
+                    <i class="fa fa-users"></i>
+                    <span>Kapasitas {{ $car->kapasitas }}</span>
+                  </div>
+                  <div class="spec-item">
+                    <i class="fa fa-clock"></i>
+                    <span>Durasi Rental {{ $car->durasi_rental }}</span>
+                  </div>
+                  <div class="spec-item">
+                    <i class="fa fa-check-circle"></i>
+                    <span>Harga Termasuk {{ $car->harga_termasuk }}</span>
+                  </div>
                 </div>
-                <div class="spec-item">
-                  <i class="fa fa-clock"></i>
-                  <span>Durasi Rental {{ $car->durasi_rental }}</span>
-                </div>
-                <div class="spec-item">
-                  <i class="fa fa-check-circle"></i>
-                  <span>Harga Termasuk {{ $car->harga_termasuk }}</span>
+                <div class="car-footer">
+                  <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
+                  <div class="car-buttons">
+                    <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
+                    <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                  </div>
                 </div>
               </div>
-              <div class="car-footer">
-                <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
-                <div class="car-buttons">
-                  <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
-                  <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
-                </div>
-              </div>
-            </div>
-          </li> @endforeach
+            </a>            
+          </li> 
+          @endforeach
           <!--End Work Item -->
         </ul>
       </div>
@@ -398,33 +403,38 @@
     <!--Start Tour--> @if(count($paketWisata) > 0) <section id="tur-ija-rental-mobil-padang" class="section">
       <!-- Filtering -->
       <div class="title-box text-center">
-        <h2 class="title" data-lang-en="Padang Tour Packages" data-lang-id="Paket Wisata Padang"> Paket Wisata Padang </h2>
-        <p class="info" data-lang-en="Explore Padang with our affordable and complete tour packages. Comfortable trips, memorable experiences!" data-lang-id="Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan!"> Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan! </p>
+        <h2 class="title" data-lang-en="Padang Travel Itinerary" data-lang-id="Paket Wisata Padang"> Paket Wisata Padang </h2>
+        <p class="info" data-lang-en="Explore Padang with our affordable and complete Travel Itinerary packages. Comfortable trips, memorable experiences!" data-lang-id="Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan!"> Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan! </p>
       </div>
       <div class="work-main container">
         <!-- Work Grid -->
         <ul class="work-grid">
-          <!-- Work Item --> @foreach ($paketWisata as $paket) <li class="car-card">
-            <div class="car-image-wrapper">
-              <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
-            </div>
-            <div class="car-info">
-              <h3 class="car-title">{{ $paket->nama_paket }}</h3>
-              <div class="car-specs">
-                <div class="spec-item">
-                  <i class="fa fa-clock"></i>
-                  <span>Durasi {{ $paket->durasi }}</span>
+          <!-- Work Item --> 
+          @foreach ($paketWisata as $paket) 
+          <li class="car-card">
+            <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}">
+              <div class="car-image-wrapper">
+                <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
+              </div>
+              <div class="car-info">
+                <h3 class="car-title">{{ $paket->nama_paket }}</h3>
+                <div class="car-specs">
+                  <div class="spec-item">
+                    <i class="fa fa-clock"></i>
+                    <span>Durasi {{ $paket->durasi }}</span>
+                  </div>
+                </div>
+                <div class="car-footer">
+                  <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
+                  <div class="car-buttons">
+                    <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
+                    <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                  </div>
                 </div>
               </div>
-              <div class="car-footer">
-                <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
-                <div class="car-buttons">
-                  <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
-                  <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
-                </div>
-              </div>
-            </div>
-          </li> @endforeach
+            </a>            
+          </li> 
+          @endforeach
           <!--End Work Item -->
         </ul>
       </div>
@@ -449,23 +459,28 @@
             <h2 class="title" data-lang-en="Latest Articles" data-lang-id="Artikel Terbaru"> Artikel Terbaru </h2>
             <p class="info" data-lang-en="Read the latest insights, tips, and stories about travel, destinations, and car rental in Padang." data-lang-id="Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang."> Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang. </p>
           </div>
-          <!-- Start Blog item #1--> @foreach ($blogs as $blog) <div class="col-md-4">
-            <div class="blog-post">
-              <div class="post-media">
-                <img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
-              </div>
-              <div class="post-desc">
-                <h4>{{ $blog->judul }}</h4>
-                <h5>{{ $blog->penulis }}/{{ $blog->published_at }}</h5>
-                <div class="konten">
-                  <p>{!! $blog->konten !!}</p>
+          <!-- Start Blog item #1--> 
+          @foreach ($blogs as $blog) 
+          <div class="col-md-4">
+            <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}">
+              <div class="blog-post">
+                <div class="post-media">
+                  <img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
                 </div>
-                <div class="text-center">
-                  <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-blue-border" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
+                <div class="post-desc">
+                  <h4>{{ $blog->judul }}</h4>
+                  <h5>{{ $blog->penulis }}/{{ $blog->published_at }}</h5>
+                  <div class="konten">
+                    <p>{!! $blog->konten !!}</p>
+                  </div>
+                  <div class="text-center">
+                    <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-read" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> @endforeach
+            </a>
+          </div> 
+          @endforeach
         </div>
         <!--/.row-->
       </div>
