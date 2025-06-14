@@ -3660,6 +3660,16 @@ footer i{
 
 
  @media (max-width:480px) {
+.slider-text-wrapper {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		top: 50%;
+		left: 0;
+		margin-top: -125px;
+		text-align: center;
+		z-index:999;
+	}
 	 
 .big {
     font-size: 35px;
@@ -3668,6 +3678,7 @@ footer i{
 
 .small {
     font-size: 19px;
+	
 }
 
 }
