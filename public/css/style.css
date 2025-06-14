@@ -2877,7 +2877,7 @@ html[xmlns] .slides {
   
 	.armadaImageContainer img {
 	  height: auto;
-	  object-fit: contain; /* atau remove object-fit kalau mau gambar tampil natural */
+	  object-fit: contain;
 	}
   }
 
