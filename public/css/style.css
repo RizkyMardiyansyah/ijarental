@@ -1267,7 +1267,7 @@ section {
 	left: 0;
 	top: 0;
 	right: 0;
-	z-index: 5;
+	z-index: 100;
 	width: 100%;
 	height: 100%;
 }
@@ -3661,15 +3661,19 @@ footer i{
 
  @media (max-width:480px) {
 	 
-.big {
-    font-size: 35px;
-    line-height: 52px;
-}
-
-.small {
-    font-size: 19px;
+	.big {
+		font-size: 35px;
+		line-height: 52px;
+		position: relative;
+		z-index: 999;
+	}
 	
-}
+	.small {
+		font-size: 19px;
+		position: relative;
+		z-index: 999;
+	}
+	
 
 }
 
