@@ -3664,12 +3664,12 @@ footer i{
 .big {
     font-size: 35px;
     line-height: 52px;
-	z-index: 999 !important;
+	z-index: 99999 !important;
 }
 
 .small {
     font-size: 199 !important;
-	z-index: 999 !important;
+	z-index: 99999 !important;
 	
 }
 
