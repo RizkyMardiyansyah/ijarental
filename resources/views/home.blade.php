@@ -20,7 +20,7 @@
               <div class="container">
                 <h1 class="big" data-lang-en="Car Rental in Padang" data-lang-id="Rental Mobil di Kota Padang">Rental Mobil di Kota Padang</h1>
                 <h2 class="small" data-lang-en="Reliable car rental service for personal or business needs in Padang" data-lang-id="Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang">Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang</h2>
-                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn " title="Pesan Rental Mobil di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Pesan Rental Mobil di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
           </li>
@@ -29,7 +29,7 @@
               <div class="container">
                 <h1 class="big" data-lang-en="Affordable Car Rental in Padang" data-lang-id="Sewa Mobil Murah di Padang">Sewa Mobil Murah di Padang</h1>
                 <h2 class="small" data-lang-en="Enjoy a safe and budget-friendly trip with the best car rental service in Padang" data-lang-id="Nikmati perjalanan aman dan hemat dengan layanan rental mobil terbaik di kota Padang">Nikmati perjalanan aman dan hemat dengan layanan rental mobil terbaik di kota Padang</h2>
-                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn " title="Sewa Mobil Murah di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Sewa Mobil Murah di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
           </li>
@@ -38,7 +38,7 @@
               <div class="container">
                 <h1 class="big" data-lang-en="Car Rental Service in Padang" data-lang-id="Jasa Rental Mobil Kota Padang">Jasa Rental Mobil Kota Padang</h1>
                 <h2 class="small" data-lang-en="Wide range of vehicles, fast service, and easy booking process" data-lang-id="Pilihan kendaraan lengkap, layanan cepat, dan proses pemesanan yang mudah">Pilihan kendaraan lengkap, layanan cepat, dan proses pemesanan yang mudah</h2>
-                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn " title="Jasa Rental Mobil Kota Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Jasa Rental Mobil Kota Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
             </div>
           </li>
