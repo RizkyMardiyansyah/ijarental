@@ -18,7 +18,27 @@
             <div class="slider-text-wrapper">
               <div class="container">
                 <h1 class="big" data-lang-en="Car Rental in Padang" data-lang-id="Rental Mobil di Kota Padang">Rental Mobil di Kota Padang</h1>
-                <h1 style="color: white; z-index:99999" data-lang-en="Car Rental " data-lang-id="Rental Mobil ">Rental Mobil</h1>
+                
+                <h2 class="small" data-lang-en="Reliable car rental service for personal or business needs in Padang" data-lang-id="Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang">Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang</h2>
+                <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Pesan Rental Mobil di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- End Slider  -->
+    <!-- Start Slider  -->
+    {{-- <section id="rental-mobil-padang" class="home">
+      <div class="slider-overlay"></div>
+      <div class="flexslider">
+        <ul class="slides scroll">
+          <li class="first">
+            <h1 style="color: white; z-index: 999999;" data-lang-en="Car Rental " data-lang-id="Rental Mobil ">Rental Mobil</h1>
+            <div class="slider-text-wrapper">
+              <div class="container">
+                <h1 class="big" data-lang-en="Car Rental in Padang" data-lang-id="Rental Mobil di Kota Padang">Rental Mobil di Kota Padang</h1>
+                
                 <h2 class="small" data-lang-en="Reliable car rental service for personal or business needs in Padang" data-lang-id="Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang">Layanan sewa mobil terpercaya untuk kebutuhan pribadi maupun bisnis di Padang</h2>
                 <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Pesan Rental Mobil di Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
               </div>
@@ -44,7 +64,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> --}}
     <!-- End Slider  -->
     <!--Start Section-->
     <section id="layanan-ija-rental-mobil-padang" class="section">
