@@ -25,7 +25,7 @@
               </div>
             </div>
           </li>
-          {{-- <li class="secondary">
+          <li class="secondary">
             <div class="slider-text-wrapper">
               <div class="container">
                 <h1 class="big" data-lang-en="Affordable Car Rental in Padang" data-lang-id="Sewa Mobil Murah di Padang">Sewa Mobil Murah di Padang</h1>
@@ -34,7 +34,7 @@
               </div>
             </div>
           </li>
-          <li class="third">
+          {{-- <li class="third">
             <div class="slider-text-wrapper">
               <div class="container">
                 <h1 class="big" data-lang-en="Car Rental Service in Padang" data-lang-id="Jasa Rental Mobil Kota Padang">Jasa Rental Mobil Kota Padang</h1>
