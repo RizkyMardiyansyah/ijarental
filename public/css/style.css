@@ -455,7 +455,7 @@ section {
 	  height: 100%;
 	  background-color: transparent;
 	  border-radius: 10rem;
-	  /* z-index: -2; */
+	  z-index: -2;
 	}
 	&:before {
 	  content: '';
@@ -467,7 +467,7 @@ section {
 	  background: linear-gradient(45deg, #488EFE, #2A6AC9);
 	  transition: all .3s;
 	  border-radius: 10rem;
-	  /* z-index: -1; */
+	  z-index: -1;
 	}
 	&:hover {
 	  color: #fff !important;
