@@ -445,7 +445,7 @@ section {
 	transition: all .3s;
 	position: relative;
 	overflow: hidden;
-	z-index: 999;
+	z-index: 1;
 	&:after {
 	  content: '';
 	  position: absolute;
@@ -3664,10 +3664,12 @@ footer i{
 .big {
     font-size: 35px;
     line-height: 52px;
+	z-index: 999 !important;
 }
 
 .small {
-    font-size: 19px;
+    font-size: 199 !important;
+	z-index: 999 !important;
 	
 }
 
