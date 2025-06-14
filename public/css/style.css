@@ -3661,19 +3661,15 @@ footer i{
 
  @media (max-width:480px) {
 	 
-	.big {
-		font-size: 35px;
-		line-height: 52px;
-		position: relative;
-		z-index: 999;
-	}
+.big {
+    font-size: 35px;
+    line-height: 52px;
+}
+
+.small {
+    font-size: 19px;
 	
-	.small {
-		font-size: 19px;
-		position: relative;
-		z-index: 999;
-	}
-	
+}
 
 }
 
