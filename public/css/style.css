@@ -1335,40 +1335,12 @@ html[xmlns] .slides {
 /* Tab
 /*-----------------------------------------------------------------*/
 
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 10px;
-    font-family: sans-serif;
-}
-
-.pagination a,
-.pagination span {
-    padding: 6px 12px;
-    text-decoration: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    color: #333;
-    font-size: 16px;
-}
-
-.pagination a:hover {
-	background: linear-gradient(to right,  #66B2FF, #007BFF);
-	color:#fff;
-}
-
-.pagination .disabled {
-    color: #aaa;
-    cursor: not-allowed;
-    background-color: #f9f9f9;
-}
 
 .content-tab-1 .nav {
 	text-align: center;
 	text-transform: uppercase;
 	justify-content: space-between;
-	/* gap: 10px; */
+	gap: 10px;
 	display: flex;
 	flex-wrap: wrap;
 
@@ -1376,12 +1348,12 @@ html[xmlns] .slides {
 
 .content-tab-1 > .nav > li {
 	flex: 1 1 calc(20% - 10px);
-	margin: 5px;
 	float: none;
 	display: inline-block;
 	border: 2px solid #488EFE;
 	padding: 3px 20px;
 	box-shadow: 0px 0px 2px #F2F2F2;
+	margin-bottom: 5px;
 	border-radius: 20px;
 }
 
@@ -1845,7 +1817,6 @@ html[xmlns] .slides {
 }
 
 .car-card {
-	margin: 5px;
     background: #fff;
     border-radius: 15px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
@@ -1863,24 +1834,20 @@ html[xmlns] .slides {
 }
 
 .car-image-wrapper {
-	padding: 10px;
     position: relative;
     width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 12px;
+    padding: 10px;
+    background-color: #f5f7fb;
+    text-align: center;
 }
-
 
 .car-image-wrapper img {
-    width: 100%;
-	border-radius: 12px;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    max-width: 100%;
+    height: 200px;
+	overflow: hidden;
+	object-fit: cover;
+    border-radius: 12px;
 }
-
-
 
 .car-year {
     position: absolute;
@@ -2398,35 +2365,12 @@ html[xmlns] .slides {
 	border: 1px solid rgba(0, 0, 0, .1);
 	margin-bottom: 30px;
 	border-radius: 15px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	box-shadow: 0 25px 30px rgba(0, 0, 0, 0.1);
-}
-
-.blog-post:hover {
-	transform: translateY(-5px); /* Gerak ke atas 5px */
-	box-shadow: 0 25px 30px rgba(0, 0, 0, 0.15); /* Tambah efek bayangan */
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 .post-desc {
 	padding: 25px 20px;
 }
-.konten {
-	position: relative;
-	max-height: 4.5em; 
-	overflow: hidden;
-	padding: 0px;
-  }
-  
-  .konten::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 2em;
-	background: linear-gradient(to bottom, transparent, white); /* Sesuaikan background */
-  }
-  
 
 .post-desc a{
 	left: auto !important;
@@ -2440,10 +2384,14 @@ html[xmlns] .slides {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-.post-desc p {
-	margin: 0 !important;
-  }
-  
+.post-desc p{
+	display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .post-desc h5 {
     color: #585957;
     font-size: 13px;
@@ -2468,7 +2416,18 @@ html[xmlns] .slides {
 	height: 100%;
 	object-fit: cover;
   }
- 
+  .blogmedia {
+	height: 80px;
+	overflow: hidden;
+	
+  }
+
+  .blogmedia img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  
 
 .post-blog .btn {
 	text-transform: uppercase;
@@ -3075,84 +3034,25 @@ li.comment ol.comment-sub {
 }
 
 .widget-main {
-	margin-bottom: 30px;
-	padding: 20px;
+	margin-bottom:30px;
+	padding:20px 20px 10px 20px;
 	border: 1px solid #EAEAEA;
-	background-color: #fff;
 }
 
-
-.sidebar-widget {
-	display: flex;
-	align-items: flex-start;
-	background-color: #f5f7fb;
-	padding: 5px;
-	margin: 5px;
-	border-radius: 10px;
-	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
-
+.widget-sidebar .search-box {
+	position: relative;
 }
 
-.blog-thumbnail {
-	width: 100px;
-	height: 75px;
-	overflow: hidden;
-	border-radius: 6px;
-	flex-shrink: 0;
+.widget-sidebar .search-box input {
+	padding-left:10px;
 }
 
-.blog-thumbnail img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	display: block;
+.widget-sidebar .search-box i {
+	position: absolute;
+	right: 20px;
+	top: 14px;
+	font-size: 16px;
 }
-
-.blog-title {
-	font-size: 14px;
-	font-weight: 600;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;          /* Batas 2 baris */
-	-webkit-box-orient: vertical;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 40px;                   /* Sesuaikan untuk 2 baris */
-	line-height: 1.2;
-	margin: 0;
-}
-
-.blog-info {
-	flex-grow: 1;
-	padding-left: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;        /* Agar teks sejajar tengah */
-	height: 75px;                   /* Sama dengan tinggi gambar */
-}
-
-
-
-.sidebar-widget-title {
-	font-weight: bold;
-	font-size: 14px;
-	margin-bottom: 4px;
-}
-
-.sidebar-widget-title a {
-	color: #333;
-	text-decoration: none;
-}
-
-.sidebar-widget-title a:hover {
-	text-decoration: underline;
-}
-
-.date {
-	font-size: 12px;
-	color: #888;
-	margin: 0;
-}
-
 
 .post-categories ul {
 	padding:0px;
@@ -3217,6 +3117,7 @@ li.comment ol.comment-sub {
 .sidebar-widget img {
 	float: left;
 	width: 96px;
+	margin: 6px 14px 22px 0px;
 }
 
 .sidebar-widget p.date {
