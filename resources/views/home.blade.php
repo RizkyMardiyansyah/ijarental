@@ -36,8 +36,8 @@
           </li>
           <li class="third">
             <div class="overlay"></div>
-            <div class="container">
-              <div class="img-wrapper">
+            <div class="slider-text-wrapper">
+              <div class="container">
                 <h1 class="big" data-lang-en="Car Rental Service in Padang" data-lang-id="Jasa Rental Mobil Kota Padang">Jasa Rental Mobil Kota Padang</h1>
                 <h2 class="small" data-lang-en="Wide range of vehicles, fast service, and easy booking process" data-lang-id="Pilihan kendaraan lengkap, layanan cepat, dan proses pemesanan yang mudah">Pilihan kendaraan lengkap, layanan cepat, dan proses pemesanan yang mudah</h2>
                 <a href="https://wa.me/6281268258986" target="_blank" class="middle btn btn-white-border" title="Jasa Rental Mobil Kota Padang" data-lang-en="Book Now" data-lang-id="Rental Sekarang">Rental Sekarang</a>
