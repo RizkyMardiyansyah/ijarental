@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900');
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic');
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic);
 
 
 html, body {
@@ -1128,13 +1128,6 @@ section {
 	width: 100%;
 }
 
-.home .flexslider .slides img.parallax {
-	background-attachment: fixed;
-}
-
-.flexslider.video img {
-	background: none !important;
-}
 
 
 .first {
@@ -1246,34 +1239,6 @@ section {
 	color: #fff;
 	transition: none;
 }
-
-
-.slider-overlay {
-	
-
-
-	background:rgba(0, 0, 0, 0.4) url("../images/pattern.png") repeat;
-	position: absolute;
-	display: block;
-	left: 0;
-	top: 0;
-	right: 0;
-	z-index: 10;
-	width: 100%;
-	height: 100%;
-}
-	.img-wrapper{
-		position: absolute;
-		z-index: 200 !important;
-	}
-
-	.slider-text-wrapper,
-	.img-wrapper,
-	.flexslider,
-	.slides li {
-	  position: relative;
-	  z-index: auto;
-	}
 
 
 /*-----------------------------------------------------------------*/
