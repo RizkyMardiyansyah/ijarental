@@ -220,7 +220,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: #488EFE;
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	border-radius: 30px;
 	cursor: pointer;
 	height: 100%;
@@ -991,7 +991,7 @@ section {
 
 #header.scrolled {
 	.toggle-label{
-		background-color: #fff;
+		background: #fff;
 	};
 	.toggle-inner{
 		color: #488EFE;
@@ -3610,6 +3610,12 @@ footer i{
 }
 
  @media (max-width: 768px) {
+.language-selector{
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
 	 
  .thumnail-img {
 	width:50%;
