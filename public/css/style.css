@@ -291,7 +291,7 @@ textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[ty
 }
 
 .scrollup:hover {
-	background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 }
 
 .section {
@@ -464,7 +464,7 @@ section {
 	  left: 0;
 	  width: 0%;
 	  height: 100%;
-	  background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	  background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	  transition: all .3s;
 	  border-radius: 10rem;
 	  z-index: -1;
@@ -489,7 +489,7 @@ section {
 	border-radius: 10rem;
 	font-size: 1rem;
 	letter-spacing: .15rem;
-	background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	border-color: #488EFE;
 	color:#FFF;
 	transition: background-color 0.9s ease-in-out;
@@ -515,12 +515,12 @@ section {
 
 .btn-gray-border:hover, .btn-gray-border:focus {
 	color: #FFF;
-	background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	border-color:#488EFE;
 }
 .btn-blue-border:hover, .btn-blue-border:focus {
 	color: #FFF;
-	background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	border-color:#488EFE;
 }
 
@@ -557,7 +557,7 @@ section {
 	  left: 0;
 	  width: 0%;
 	  height: 100%;
-	  background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	  background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	  transition: all .3s;
 	  border-radius: 10rem;
 	  z-index: -1;
@@ -996,7 +996,7 @@ section {
 	.toggle-inner{
 		color: #488EFE;
 	};
-    background: linear-gradient(45deg, #488EFE, #2A6AC9) !important;
+    background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF) !important;
 }
 
 
@@ -1465,13 +1465,13 @@ html[xmlns] .slides {
 
 .content-tab-1 > .nav > li.active {
     border: 2px solid #488EFE;
-    background: linear-gradient(45deg, #488EFE, #2A6AC9);
+    background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 }
 
 .content-tab-1 > .nav > li:hover {
 	display: inline-block;
     border: 2px solid #488EFE;
-    background: linear-gradient(45deg, #488EFE, #2A6AC9);
+    background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 }
 
 .tab-content-main {
@@ -1492,7 +1492,7 @@ html[xmlns] .slides {
 	position: absolute;
 	width: 40px;
 	height: 40px;
-	background: linear-gradient(45deg, #488EFE, #2A6AC9) ;
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF) ;
 	color: #FFF;
 	text-align: center;
 	line-height: 35px;
@@ -1716,7 +1716,7 @@ html[xmlns] .slides {
 	transition: background 0.5s ease-in-out, color 0.5s ease-in-out, border-color 0.5s ease-in-out;
 }
 .timeline .timeline-item:hover {
-	background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	
 }
 .timeline .timeline-item:hover h4 i {
@@ -1730,7 +1730,7 @@ html[xmlns] .slides {
 	font-weight: bold;
 }
 .timeline-item h4 i {
-    background: linear-gradient(45deg, #488EFE, #2A6AC9);
+    background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
     color: white;
     border-radius: 50%;
     padding: 10px;
@@ -1867,7 +1867,7 @@ html[xmlns] .slides {
 	border: 2px solid white;
 }
 .work-grid .work-item .hover-link .btn:hover{
-	background: linear-gradient(45deg, #488EFE, #2A6AC9); 
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF); 
 	border: 2px solid #488EFE;
 }
 
@@ -2088,7 +2088,7 @@ html[xmlns] .slides {
 	  left: 0;
 	  width: 0%;
 	  height: 100%;
-	  background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	  background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	  transition: all .3s;
 	  border-radius: 8px;
 	  z-index: -1;
@@ -2324,7 +2324,7 @@ html[xmlns] .slides {
 	border-radius: 50%;
 	display: inline-block;
 	margin: 0px auto;
-	background: linear-gradient(45deg, #488EFE, #2A6AC9) none repeat scroll 0% 0%;
+	background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF) none repeat scroll 0% 0%;
 }
 
 .services-box .services-desc {
@@ -3477,7 +3477,7 @@ li.comment ol.comment-sub {
 	  left: 0;
 	  width: 0%;
 	  height: 100%;
-	  background: linear-gradient(45deg, #488EFE, #2A6AC9);
+	  background: linear-gradient(45deg, #488EFE, #405DE6, #3C2FCF);
 	  transition: all .3s;
 	  border-radius: 10rem;
 	  z-index: -1;
