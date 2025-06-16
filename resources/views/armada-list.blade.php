@@ -22,21 +22,17 @@
       </div>
     </section>
     <!-- /page-header -->
-    <!--Start blog -->
-    <section class="section">
+    <!--Start fleet-->
+    <section id="armada-ija-rental-mobil-padang" class="section">
       <div class="container">
-        <div class="title-box text-center">
-          <h2 class="title">Daftar Armada Kami</h2>
+        <div class="row">
+          <div class="title-box text-center">
+            <h2 class="title">Daftar Armada Kami</h2>
           <p class="info">Armada mobil terawat di Padang dengan harga terjangkau hanya di Ija Rental.</p>
-        </div>
-        {{-- <div class="row"> --}}
-        <!-- Blog Post -->
-        <div class="work-main container">
-          <!-- Work Grid -->
-          <ul class="work-grid"> 
-            @foreach ($cars as $car) 
-            <li class="car-card">
-              <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}">
+          </div>
+          <!-- Start Blog item #1--> @foreach ($cars as $car) <div class="col-md-4">
+            <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}">
+              <div class="blog-post">
                 <div class="car-image-wrapper">
                   <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
                 </div>
@@ -60,15 +56,19 @@
                     <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
                     <div class="car-buttons">
                       <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
-                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent">Rental</a>
                     </div>
                   </div>
                 </div>
-              </a>
-            </li> 
-            @endforeach
+              </div>
+            </a>
+          </div> @endforeach
         </div>
-        <!-- /Blog Post -->
+        <!--/.row-->
+      </div>
+      <!--/.container-->
+    </section>
+    {{-- end fleet --}}
         {{-- </div> --}}
       </div>
       <div style="margin-top: 10px" class="text-center mt-4">

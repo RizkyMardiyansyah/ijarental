@@ -9,7 +9,6 @@
   <body data-spy="scroll" data-target="#main-menu">
     <!--Start Navigation--> @include('partials.navbar')
     <!--End Navigation-->
-    
     <!-- Start Slider  -->
     <section id="rental-mobil-padang" class="home">
       <div class="flexslider">
@@ -353,197 +352,187 @@
     <!--End History-->
     <!--Start fleet-->
     <section id="armada-ija-rental-mobil-padang" class="section">
-      <!-- Filtering -->
-      <div class="title-box text-center">
-        <h2 class="title" data-lang-en="Fleet of Ija Car Rental in Padang" data-lang-id="Armada Ija Rental Mobil Padang"> Armada Ija Rental Mobil Padang </h2>
-        <p class="info" data-lang-en="Well-maintained car fleet in Padang at affordable prices in Ija Rental." data-lang-id="Armada mobil terawat di Padang dengan harga terjangkau hanya di Ija Rental."> Armada mobil terawat di Padang dengan harga terjangkau hanya di Ija Rental. </p>
-      </div>
-      <div class="work-main container">
-        <!-- Work Grid -->
-        <ul class="work-grid">
-          <!-- Work Item --> 
-          @foreach ($cars as $car) 
-          <li class="car-card">
-            <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}">
-              <div class="car-image-wrapper">
-                <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
-              </div>
-              <div class="car-info">
-                <h3 class="car-title">{{ $car->nama }}</h3>
-                <div class="car-specs">
-                  <div class="spec-item">
-                    <i class="fa fa-users"></i>
-                    <span>Kapasitas {{ $car->kapasitas }}</span>
-                  </div>
-                  <div class="spec-item">
-                    <i class="fa fa-clock"></i>
-                    <span>Durasi Rental {{ $car->durasi_rental }}</span>
-                  </div>
-                  <div class="spec-item">
-                    <i class="fa fa-check-circle"></i>
-                    <span>Harga Termasuk {{ $car->harga_termasuk }}</span>
-                  </div>
-                </div>
-                <div class="car-footer">
-                  <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
-                  <div class="car-buttons">
-                    <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
-                    <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
-                  </div>
-                </div>
-              </div>
-            </a>            
-          </li> 
-          @endforeach
-          <!--End Work Item -->
-        </ul>
-      </div>
-    </section>
-    <!--End Fleet-->
-    <!--Start Tour--> @if(count($paketWisata) > 0) <section id="tur-ija-rental-mobil-padang" class="section">
-      <!-- Filtering -->
-      <div class="title-box text-center">
-        <h2 class="title" data-lang-en="Padang Travel Itinerary" data-lang-id="Paket Wisata Padang"> Paket Wisata Padang </h2>
-        <p class="info" data-lang-en="Explore Padang with our affordable and complete Travel Itinerary packages. Comfortable trips, memorable experiences!" data-lang-id="Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan!"> Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan! </p>
-      </div>
-      <div class="work-main container">
-        <!-- Work Grid -->
-        <ul class="work-grid">
-          <!-- Work Item --> 
-          @foreach ($paketWisata as $paket) 
-          <li class="car-card">
-            <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}">
-              <div class="car-image-wrapper">
-                <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
-              </div>
-              <div class="car-info">
-                <h3 class="car-title">{{ $paket->nama_paket }}</h3>
-                <div class="car-specs">
-                  <div class="spec-item">
-                    <i class="fa fa-clock"></i>
-                    <span>Durasi {{ $paket->durasi }}</span>
-                  </div>
-                </div>
-                <div class="car-footer">
-                  <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
-                  <div class="car-buttons">
-                    <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
-                    <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
-                  </div>
-                </div>
-              </div>
-            </a>            
-          </li> 
-          @endforeach
-          <!--End Work Item -->
-        </ul>
-      </div>
-    </section> @endif
-    <!--End Tour-->
-    <!--Start Call To Action-->
-    <section id="cta" class="parallax">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row text-center">
-          <h2 data-lang-en="Trusted Car Rental in Padang" data-lang-id="Sewa Mobil Terpercaya di Padang">Rental Mobil Terpercaya di Padang</h2>
-          <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-green" data-lang-en="BOOK NOW" data-lang-id="RENTAL SEKARANG">RENTAL SEKARANG</a>
-        </div>
-      </div>
-    </section>
-    <!--End Call To Action-->
-    <!-- Start blog-->
-    <section id="artikel-ija-rental-mobil-padang" class="section">
       <div class="container">
         <div class="row">
           <div class="title-box text-center">
-            <h2 class="title" data-lang-en="Latest Articles" data-lang-id="Artikel Terbaru"> Artikel Terbaru </h2>
-            <p class="info" data-lang-en="Read the latest insights, tips, and stories about travel, destinations, and car rental in Padang." data-lang-id="Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang."> Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang. </p>
+            <h2 class="title" data-lang-en="Fleet of Ija Car Rental in Padang" data-lang-id="Armada Ija Rental Mobil Padang"> Armada Ija Rental Mobil Padang </h2>
+            <p class="info" data-lang-en="Well-maintained car fleet in Padang at affordable prices in Ija Rental." data-lang-id="Armada mobil terawat di Padang dengan harga terjangkau hanya di Ija Rental."> Armada mobil terawat di Padang dengan harga terjangkau hanya di Ija Rental. </p>
           </div>
-          <!-- Start Blog item #1--> 
-          @foreach ($blogs as $blog) 
-          <div class="col-md-4">
-            <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}">
+          <!-- Start Blog item #1--> @foreach ($cars as $car) <div class="col-md-4">
+            <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}">
               <div class="blog-post">
-                <div class="post-media">
-                  <img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
+                <div class="car-image-wrapper">
+                  <img src="{{ asset('storage/' . $car->image) }}" alt="Rental Mobil {{ $car->nama }} Padang">
                 </div>
-                <div class="post-desc">
-                  <h4>{{ $blog->judul }}</h4>
-                  <h5>{{ $blog->penulis }}/{{ $blog->published_at }}</h5>
-                  <div class="konten">
-                    <p>{!! $blog->konten !!}</p>
+                <div class="car-info">
+                  <h3 class="car-title">{{ $car->nama }}</h3>
+                  <div class="car-specs">
+                    <div class="spec-item">
+                      <i class="fa fa-users"></i>
+                      <span>Kapasitas {{ $car->kapasitas }}</span>
+                    </div>
+                    <div class="spec-item">
+                      <i class="fa fa-clock"></i>
+                      <span>Durasi Rental {{ $car->durasi_rental }}</span>
+                    </div>
+                    <div class="spec-item">
+                      <i class="fa fa-check-circle"></i>
+                      <span>Harga Termasuk {{ $car->harga_termasuk }}</span>
+                    </div>
                   </div>
-                  <div class="text-center">
-                    <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-read" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
+                  <div class="car-footer">
+                    <div class="car-price"> @if($car->tambah_harga) <span>Rp.{{ number_format($car->harga_sewa, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
+                    <div class="car-buttons">
+                      <a href="/{{Str::slug($car->nama) }}-{{ $car->id }}" class="btn btn-detail">Detail</a>
+                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
-          </div> 
-          @endforeach
+          </div> @endforeach
         </div>
         <!--/.row-->
       </div>
       <!--/.container-->
     </section>
-    <!-- End blog-->
-    <!--Start Testimonial-->
-    <section id="pelangan-ija-rental-mobil-padang" class="section parallax">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="title-box text-center white">
-            <h2 class="title" data-lang-en="What Customer Say" data-lang-id="Pendapat Pelanggan"> Pendapat Pelanggan </h2>
+    {{-- end fleet --}}
+    <!--Start Tour--> @if(count($paketWisata) > 0) <section id="tur-ija-rental-mobil-padang" class="section">
+      <section id="armada-ija-rental-mobil-padang" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="title-box text-center">
+              <h2 class="title" data-lang-en="Padang Travel Itinerary" data-lang-id="Paket Wisata Padang"> Paket Wisata Padang </h2>
+              <p class="info" data-lang-en="Explore Padang with our affordable and complete Travel Itinerary packages. Comfortable trips, memorable experiences!" data-lang-id="Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan!"> Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan! </p>
+            </div>
+            <!-- Start Blog item #1--> @foreach ($paketWisata as $paket) <div class="col-md-4">
+              <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}">
+                <div class="blog-post">
+                  <div class="car-image-wrapper">
+                    <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
+                  </div>
+                  <div class="car-info">
+                    <h3 class="car-title">{{ $paket->nama_paket }}</h3>
+                    <div class="car-specs">
+                      <div class="spec-item">
+                        <i class="fa fa-clock"></i>
+                        <span>Durasi {{ $paket->durasi }}</span>
+                      </div>
+                    </div>
+                    <div class="car-footer">
+                      <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
+                      <div class="car-buttons">
+                        <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
+                        <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Pesan">Pesan</a>
+                      </div>
+                    </div>
+                  </div>
+                  <a></a>
+                </div> @endforeach
+            </div>
+            <!--/.row-->
           </div>
-          <div class="col-md-10 col-md-offset-1">
-            <div class="testimonials-carousel">
-              <!-- Testimonial 1 -->
-              <div class="items">
-                <div class="desc">Saya mami ETTY bersama 14 orang keliling padang sangat puas sekali selama enam hari kami di padang, driver nya baik sabar bawa mobil nya enak</div>
-                <img src="https://ui-avatars.com/api/?name=Etty+Maria&length=1&background=0d6efd&color=ffffff&bold=true&rounded=true&size=128" class="testimonial-pic" alt="E" />
-                <div class="name">Etty Maria</div>
-              </div>
-              <!-- Testimonial 2 -->
-              <div class="items">
-                <div class="desc">Alhamdulillah .. Liburan yg sgt berkesan .. Padang Payakumbuh Bukit Tinggi.. Mobilnya bagus nyaman.. Sopirnya jg oke bgt.. Puasss</div>
-                <img src="https://ui-avatars.com/api/?name=Yetti+Rusiyanti&length=1&background=198754&color=ffffff&bold=true&rounded=true&size=128" class="testimonial-pic" alt="Y" />
-                <div class="name">Yetti Rusiyanti</div>
-              </div>
-              <!-- Testimonial 3 -->
-              <div class="items">
-                <div class="desc">Alhamdulillah Pelayanan nya memuaskan , perjalanan kami tgl 15-20 mei kmrn bersama Driver Pak Ferry. Dengan jalan berkelok kelok tidak terasa dengan disertai pelayanan Driver yang maksimal , ramah , dan sabar hadapi kita Ibu Ibu. Terima Kasih untuk semuanya.. Sukses selal</div>
-                <img src="https://ui-avatars.com/api/?name=Dhany+Kusniati&length=1&background=dc3545&color=ffffff&bold=true&rounded=true&size=128" class="testimonial-pic" alt="D" />
-                <div class="name">Dhany Kusniati</div>
+          <!--/.container-->
+      </section> @endif
+      <!--End Tour-->
+      <!--Start Call To Action-->
+      <section id="cta" class="parallax">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row text-center">
+            <h2 data-lang-en="Trusted Car Rental in Padang" data-lang-id="Sewa Mobil Terpercaya di Padang">Rental Mobil Terpercaya di Padang</h2>
+            <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-green" data-lang-en="BOOK NOW" data-lang-id="RENTAL SEKARANG">RENTAL SEKARANG</a>
+          </div>
+        </div>
+      </section>
+      <!--End Call To Action-->
+      <!-- Start blog-->
+      <section id="artikel-ija-rental-mobil-padang" class="section">
+        <div class="container">
+          <div class="row">
+            <div class="title-box text-center">
+              <h2 class="title" data-lang-en="Latest Articles" data-lang-id="Artikel Terbaru"> Artikel Terbaru </h2>
+              <p class="info" data-lang-en="Read the latest insights, tips, and stories about travel, destinations, and car rental in Padang." data-lang-id="Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang."> Baca berbagai artikel terbaru seputar tips, destinasi, dan layanan sewa mobil di Padang. </p>
+            </div>
+            <!-- Start Blog item #1--> @foreach ($blogs as $blog) <div class="col-md-4">
+              <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}">
+                <div class="blog-post">
+                  <div class="post-media">
+                    <img src="{{ asset('storage/' . $blog->thumbnail) }}" alt="{{ $blog->judul }}">
+                  </div>
+                  <div class="post-desc">
+                    <h4>{{ $blog->judul }}</h4>
+                    <h5>{{ $blog->penulis }}/{{ $blog->published_at }}</h5>
+                    <div class="konten">
+                      <p>{!! $blog->konten !!}</p>
+                    </div>
+                    <div class="text-center">
+                      <a href="/artikel-{{Str::slug($blog->judul) }}-{{ $blog->id }}" class="btn btn-read" data-lang-en="Read More" data-lang-id="Lanjut Baca">Lanjut Baca</a>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div> @endforeach
+          </div>
+          <!--/.row-->
+        </div>
+        <!--/.container-->
+      </section>
+      <!-- End blog-->
+      <!--Start Testimonial-->
+      <section id="pelangan-ija-rental-mobil-padang" class="section parallax">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="title-box text-center white">
+              <h2 class="title" data-lang-en="What Customer Say" data-lang-id="Pendapat Pelanggan"> Pendapat Pelanggan </h2>
+            </div>
+            <div class="col-md-10 col-md-offset-1">
+              <div class="testimonials-carousel">
+                <!-- Testimonial 1 -->
+                <div class="items">
+                  <div class="desc">Saya mami ETTY bersama 14 orang keliling padang sangat puas sekali selama enam hari kami di padang, driver nya baik sabar bawa mobil nya enak</div>
+                  <img src="https://ui-avatars.com/api/?name=Etty+Maria&length=1&background=0d6efd&color=ffffff&bold=true&rounded=true&size=128" class="testimonial-pic" alt="E" />
+                  <div class="name">Etty Maria</div>
+                </div>
+                <!-- Testimonial 2 -->
+                <div class="items">
+                  <div class="desc">Alhamdulillah .. Liburan yg sgt berkesan .. Padang Payakumbuh Bukit Tinggi.. Mobilnya bagus nyaman.. Sopirnya jg oke bgt.. Puasss</div>
+                  <img src="https://ui-avatars.com/api/?name=Yetti+Rusiyanti&length=1&background=198754&color=ffffff&bold=true&rounded=true&size=128" class="testimonial-pic" alt="Y" />
+                  <div class="name">Yetti Rusiyanti</div>
+                </div>
+                <!-- Testimonial 3 -->
+                <div class="items">
+                  <div class="desc">Alhamdulillah Pelayanan nya memuaskan , perjalanan kami tgl 15-20 mei kmrn bersama Driver Pak Ferry. Dengan jalan berkelok kelok tidak terasa dengan disertai pelayanan Driver yang maksimal , ramah , dan sabar hadapi kita Ibu Ibu. Terima Kasih untuk semuanya.. Sukses selal</div>
+                  <img src="https://ui-avatars.com/api/?name=Dhany+Kusniati&length=1&background=dc3545&color=ffffff&bold=true&rounded=true&size=128" class="testimonial-pic" alt="D" />
+                  <div class="name">Dhany Kusniati</div>
+                </div>
               </div>
             </div>
           </div>
+          <!--/.row-->
         </div>
-        <!--/.row-->
-      </div>
-      <!--/.container-->
-    </section>
-    <!--Start Testimonial-->
-    <!--Start Contact-->
-    @include('partials.contact')
-    <!--End Contact-->
-    {{-- Footer Section --}} 
-    @include('partials.footer') 
-    {{-- End Footer Section --}}
-    <a href="#" class="scrollup">
-      <i class="fa fa-chevron-up"></i>
-    </a>
-    <!--Plugins-->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/easing.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.easypiechart.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.appear.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
-    <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+        <!--/.container-->
+      </section>
+      <!--Start Testimonial-->
+      <!--Start Contact--> @include('partials.contact')
+      <!--End Contact-->
+      {{-- Footer Section --}} @include('partials.footer') {{-- End Footer Section --}}
+      <a href="#" class="scrollup">
+        <i class="fa fa-chevron-up"></i>
+      </a>
+      <!--Plugins-->
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/owl-carousel/owl.carousel.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/easing.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery.easypiechart.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery.appear.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
+      <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
   </body>
 </html>

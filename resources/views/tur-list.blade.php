@@ -23,20 +23,16 @@
     </section>
     <!-- /page-header -->
     <!--Start blog -->
-    <section class="section">
+    <section id="armada-ija-rental-mobil-padang" class="section">
       <div class="container">
-        <div class="title-box text-center">
-          <h2 class="title">Paket Wisata Padang</h2>
+        <div class="row">
+          <div class="title-box text-center">
+            <h2 class="title">Paket Wisata Padang</h2>
           <p class="info">Jelajahi Padang dengan paket wisata lengkap dan terjangkau. Perjalanan nyaman, pengalaman tak terlupakan!</p>
-        </div>
-        {{-- <div class="row"> --}}
-        <!-- Blog Post -->
-        <div class="work-main container">
-          <!-- Work Grid -->
-          <ul class="work-grid"> 
-            @foreach ($paketWisata as $paket) 
-            <li class="car-card">
-              <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}">
+          </div>
+          <!-- Start Blog item #1--> @foreach ($paketWisata as $paket) <div class="col-md-4">
+            <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}">
+              <div class="blog-post">
                 <div class="car-image-wrapper">
                   <img src="{{ asset('storage/' . $paket->image) }}" alt="{{ $paket->nama }}">
                 </div>
@@ -52,20 +48,16 @@
                     <div class="car-price"> @if($paket->tambah_harga) <span>Rp.{{ number_format($paket->harga_paket, 0, ',', '.') }}</span> @else <span>Call</span> @endif </div>
                     <div class="car-buttons">
                       <a href="/detail-{{Str::slug($paket->nama_paket) }}-{{ $paket->id }}" class="btn btn-detail">Detail</a>
-                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent" data-lang-en="Book" data-lang-id="Rental">Rental</a>
+                      <a href="https://wa.me/6281268258986" target="_blank" class="btn btn-rent">Pesan</a>
                     </div>
                   </div>
                 </div>
-              </a>
-            </li> 
-            @endforeach
+                <a></a>
+              </div> @endforeach
+          </div>
+          <!--/.row-->
         </div>
-        <!-- /Blog Post -->
-        {{-- </div> --}}
-      </div>
-      <div style="margin-top: 10px" class="text-center mt-4">
-        {{ $paketWisata->links('pagination::simple-default') }}
-      </div>
+        <!--/.container-->
     </section>
     <!--Start Contact-->
     @include('partials.contact')
