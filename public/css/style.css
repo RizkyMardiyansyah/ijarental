@@ -1249,8 +1249,12 @@ section {
 
 
 .slider-overlay {
-	background:url("../images/pattern.png") repeat rgba(0, 0, 0, .4);
+	
+
+
+	background:rgba(0, 0, 0, 0.4) url("../images/pattern.png") repeat;
 	position: absolute;
+	display: block;
 	left: 0;
 	top: 0;
 	right: 0;
@@ -1260,7 +1264,15 @@ section {
 }
 	.img-wrapper{
 		position: relative;
-		z-index: 9999;
+		z-index: 200 !important;
+	}
+
+	.slider-text-wrapper,
+	.img-wrapper,
+	.flexslider,
+	.slides li {
+	  position: relative;
+	  z-index: auto;
 	}
 
 
