@@ -81,5 +81,6 @@
     <script type="text/javascript" src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+    <script>setActiveNavbar("/#layanan-ija-rental-mobil-padang");</script>
   </body>
 </html>

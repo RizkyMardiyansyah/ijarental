@@ -1,4 +1,58 @@
  
+
+ /*------------------------------*/
+/*	nav
+/*------------------------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll("#main-menu .nav-link");
+
+    function onScroll() {
+        let scrollPos = window.scrollY + 100; // Tambahan offset agar deteksi lebih tepat
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute("id");
+
+            if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    const href = link.getAttribute("href");
+                    if (href === `/#${sectionId}` || href === `#${sectionId}`) {
+                        // Hapus 'active' dari semua <li>
+                        document.querySelectorAll("#main-menu li").forEach(li => li.classList.remove("active"));
+                        // Tambahkan 'active' ke <li> dari link yang sesuai
+                        link.closest("li").classList.add("active");
+                    }
+                });
+            }
+        });
+    }
+
+    window.addEventListener("scroll", onScroll);
+    onScroll(); // Jalankan saat halaman dimuat
+});
+
+function setActiveNavbar(hrefTarget) {
+    // Hapus semua class 'active' terlebih dahulu
+    document.querySelectorAll("#main-menu li").forEach(li => li.classList.remove("active"));
+
+    // Cari nav-link dengan href sesuai
+    const targetLink = document.querySelector(`#main-menu .nav-link[href="${hrefTarget}"]`);
+    if (targetLink) {
+        const parentLi = targetLink.closest("li");
+        if (parentLi) parentLi.classList.add("active");
+    }
+}
+
+
+ /*------------------------------*/
+/*	End Nav
+/*------------------------------*/
+
+
+
  /*------------------------------*/
 /*	Page loader
 /*------------------------------*/

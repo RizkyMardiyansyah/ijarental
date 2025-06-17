@@ -46,7 +46,7 @@
                                 <li><a class="menu-link" href="/paket-wisata" data-lang-en="Itinerary" data-lang-id="Wisata">Wisata</a></li>
                             </ul>
                         </li>  
-                        <li> <a class="nav-link" href="/#kenapa-memilih-ija-rental-mobil-padang" data-lang-en="Why Us" data-lang-id="Keungulan">Keungulan</a></li>                                                        
+                        <li> <a class="nav-link" href="/#kenapa-memilih-ija-rental-mobil-padang" data-lang-en="Why Us" data-lang-id="Keunggulan">Keunggulan</a></li>                                                        
                         <li> <a class="nav-link" href="/artikel" data-lang-en="Article" data-lang-id="Artikel">Artikel</a></li>
                         <li> <a class="nav-link" href="/#pelangan-ija-rental-mobil-padang" data-lang-en="Testimonials" data-lang-id="Testimoni">Testimoni</a></li>
                         <li> <a class="nav-link" href="/#hubungi-ija-rental-mobil-padang" data-lang-en="Contact" data-lang-id="Kontak">Kontak</a> </li>

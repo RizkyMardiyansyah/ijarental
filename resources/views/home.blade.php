@@ -10,7 +10,7 @@
     <!--Start Navigation--> @include('partials.navbar')
     <!--End Navigation-->
     <!-- Start Slider  -->
-    <section id="rental-mobil-padang" class="home">
+    <section id="ija-rental-mobil-padang" class="home">
       <div class="flexslider">
         <ul class="slides scroll">
           <li class="first">
@@ -397,8 +397,8 @@
       <!--/.container-->
     </section>
     {{-- end fleet --}}
-    <!--Start Tour--> @if(count($paketWisata) > 0) <section id="tur-ija-rental-mobil-padang" class="section">
-      <section id="armada-ija-rental-mobil-padang" class="section">
+    <!--Start Tour--> @if(count($paketWisata) > 0) 
+    <section id="tur-ija-rental-mobil-padang" class="section">
         <div class="container">
           <div class="row">
             <div class="title-box text-center">

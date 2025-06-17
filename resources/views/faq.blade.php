@@ -6,7 +6,7 @@
     <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
     <title>FAQ Ija Rental - Pertanyaan Seputar Sewa Mobil di Padang</title> @include('partials.head')
   </head>
-  <body data-spy="scroll" data-target="#main-menu">
+  <body data-spy="scroll" data-target="#faq">
     <!--Start Navigation--> @include('partials.navbar2')
     <!--End Navigation-->
     <!-- page-header -->
@@ -195,5 +195,6 @@
     <script type="text/javascript" src="{{ asset('js/jquery.parallax-1.1.3.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/jquery.mixitup.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+    <script>setActiveNavbar("/faq");</script>
   </body>
 </html>
