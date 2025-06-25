@@ -127,3 +127,13 @@
     <link rel="icon" href="https://ijarental.com/img/favicon.ico" sizes="192x192" />
     <link rel="apple-touch-icon" href="https://ijarental.com/img/favicon.ico" />
     <meta name="msapplication-TileImage" content="https://ijarental.com/images/icon.png" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17263478301">
+    </script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-17263478301');
+    </script>
