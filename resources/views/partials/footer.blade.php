@@ -49,7 +49,7 @@
                         <p>zaharman2017@gmail.com</p>
                     </a>
                     <a style="margin-top: 10px;" href="https://wa.me/6281268258986" target="_blank" class="btn btn-message" data-lang-en="Get in Touch" data-lang-id="Hubungi Kami">
-                        Get in Touch
+                        Hubungi kami
                     </a>
                 </div>
             </div>
